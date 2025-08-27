@@ -30,8 +30,6 @@ import {
 import { useLanguage } from "@/components/LanguageContext";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
-
-
 export default function HomePage() {
   const { t } = useLanguage();
 
@@ -137,7 +135,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen mt-16 overflow-hidden">
       {/* Hero Section épuré avec images multiples */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background avec patterns animés */}
