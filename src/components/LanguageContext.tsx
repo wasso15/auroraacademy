@@ -3,6 +3,8 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'fr' | 'en';
+type LocaleDict = Record<string, string>;
+
 
 interface LanguageContextType {
   language: Language;
@@ -12,8 +14,8 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const translations = {
-  fr: {
+
+  const fr= {
     // Header
     'header.home': 'Accueil',
     'header.about': 'À Propos',
@@ -285,8 +287,8 @@ const translations = {
     'common.october': 'Octobre',
     'common.november': 'Novembre',
     'common.december': 'Décembre'
-  },
-  en: {
+  } as const satisfies LocaleDict;
+  const en= {
     // Header
     'header.home': 'Home',
     'header.about': 'About Us',
@@ -558,14 +560,16 @@ const translations = {
     'common.october': 'October',
     'common.november': 'November',
     'common.december': 'December'
-  }
-};
+  }  as const satisfies LocaleDict;
+
+  const translations: Record<Language, LocaleDict> = { fr, en };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('fr');
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    const dict = translations[language] ?? translations.en; // fallback
+    return dict[key] ?? key;
   };
 
   return (
