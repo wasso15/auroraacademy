@@ -11,9 +11,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { Menu, X, GraduationCap, Globe, Sparkles, Heart } from "lucide-react";
+import { Menu, X, GraduationCap, Globe, Heart } from "lucide-react";
 import { useLanguage } from "../LanguageContext";
-import { ImageWithFallback } from "../ImageWithFallback";
 import Image from "next/image";
 
 type Lang = "fr" | "en";
@@ -163,8 +162,8 @@ export function Header({ currentPage }: HeaderProps) {
     <header
       className={`fixed top-0 z-50 w-full font-poppins transition-all duration-500 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-sm border-b border-gray-200/60"
-          : "bg-black/90"
+          ? "bg-white backdrop-blur-xl shadow-sm border-b border-gray-200/60"
+          : " bg-transparent"
       }`}
     >
       {/* Skip link a11y */}
