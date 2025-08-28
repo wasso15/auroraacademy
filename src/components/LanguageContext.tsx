@@ -332,8 +332,7 @@ const fr = {
   "footer.ourImpact": "Notre Impact",
   "footer.partnerships": "Partenariats",
   "footer.connect": "Connexion",
-  "footer.rights":
-    "© 2025 Aurora Academy. Tous droits réservés. Construire l'avenir, un étudiant à la fois.",
+  "footer.rights": "© 2025 Aurora Academy. Tous droits réservés",
 
   // Common
   "common.january": "Janvier",
@@ -657,8 +656,7 @@ const en = {
   "footer.ourImpact": "Our Impact",
   "footer.partnerships": "Partnerships",
   "footer.connect": "Connect",
-  "footer.rights":
-    "© 2025 Aurora Academy. All rights reserved. Building the future, one student at a time.",
+  "footer.rights": "© 2025 Aurora Academy. All rights reserved",
 
   // Common
   "common.january": "January",

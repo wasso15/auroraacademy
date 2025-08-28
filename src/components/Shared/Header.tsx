@@ -162,7 +162,7 @@ export function Header({ currentPage }: HeaderProps) {
     <header
       className={`fixed top-0 z-50 w-full font-poppins transition-all duration-500 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-xl shadow-sm border-b border-gray-200/60"
+          ? "bg-white/55 backdrop-blur-xl shadow-sm border-b border-gray-200/60"
           : " bg-transparent"
       }`}
     >
