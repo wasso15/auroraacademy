@@ -135,7 +135,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen mt-16 overflow-hidden">
+    <div className="min-h-screen overflow-hidden font-poppins">
       {/* Hero Section épuré avec images multiples */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background avec patterns animés */}
@@ -169,21 +169,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative z-10 container mx-auto max-w-7xl px-4 py-18">
+        <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20">
           <div className="grid lg:grid-cols-12 gap-8 items-center min-h-[80vh]">
             {/* Contenu principal - 6 colonnes */}
             <div className="lg:col-span-6 space-y-8 text-white">
-              {/* Badge animé */}
-              {/* <div className="animate-bounce">
-                <Badge className="bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white/30 text-sm px-4 py-2 font-medium">
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  {t("home.enrolling2025")}
-                </Badge>
-              </div> */}
-
               {/* Titre principal avec effet typing */}
-              <div className="space-y-4">
-                <h1 className=" font-poppins text-4xl lg:text-6xl xl:text-7xl font-black leading-tight">
+              <div className="space-y-4 ">
+                <h1 className=" textce font-poppins text-6xl lg:text-6xl xl:text-7xl font-black">
                   <span className="block bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
                     {t("home.heroTitle")}
                   </span>
@@ -202,22 +194,11 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   size="lg"
-                  className="group bg-white text-[#ff7100] hover:bg-gray-50 text-lg px-8 py-4 font-bold shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300"
+                  className="group bg-white text-[#ff7100] font-semibold hover:bg-gray-50 text-[16px] px-8 py-6  shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300"
                   // onClick={() => onNavigate("programs")}
                 >
-                  <Play className="w-5 h-5 mr-2 group-hover:animate-pulse" />
+                  {" "}
                   {t("header.enrollNow")}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="group border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-md text-lg px-8 py-4 font-bold hover:scale-105 transition-all duration-300"
-                  // onClick={() => onNavigate("partnerships")}
-                >
-                  <Handshake className="w-5 h-5 mr-2" />
-                  {t("home.becomePartner")}
-                  <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </div>
@@ -262,7 +243,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Images flottantes décoratives épurées */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 rounded-2xl overflow-hidden border-4 border-white/30 shadow-2xl rotate-12 hover:rotate-0 transition-transform duration-500">
+                <div className="absolute -top-8 -right-8 w-24 h-24 z-20 rounded-2xl overflow-hidden border-4 border-white/30 shadow-2xl rotate-12 hover:rotate-0 transition-transform duration-500">
                   <ImageWithFallback
                     src={heroImages[3].url}
                     alt="Success story"
