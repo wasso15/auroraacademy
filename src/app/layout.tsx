@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Shared/Header";
 import Providers from "@/components/Shared/Providers";
+import Footer from "@/components/Shared/Footer";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -58,9 +59,7 @@ export default function RootLayout({
           <main className="min-h-[70dvh] border-2 border-red-500">
             {children}
           </main>
-          <footer className="border-t mt-12 py-10 text-center text-sm text-gray-600">
-            © {new Date().getFullYear()} Aurora Academy — Tous droits réservés.
-          </footer>
+        <Footer/>
         </Providers>
 
         {/* Vercel Analytics peut être utilisé dans un Server Component */}
