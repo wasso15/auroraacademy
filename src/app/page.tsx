@@ -197,7 +197,6 @@ export default function HomePage() {
                   className="group bg-white text-[#ff7100] font-semibold hover:bg-gray-50 text-[16px] px-8 py-6  shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300"
                   // onClick={() => onNavigate("programs")}
                 >
-                  {" "}
                   {t("header.enrollNow")}
                 </Button>
               </div>
@@ -290,7 +289,7 @@ export default function HomePage() {
               Des Résultats Concrets
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Chaque chiffre raconte une histoire de transformation et d'innovation dans l'éducation numérique.
+             { "Chaque chiffre raconte une histoire de transformation et d'innovation dans l'éducation numérique."}
             </p>
           </div>
 
@@ -342,7 +341,7 @@ export default function HomePage() {
           {/* Call to Action */}
           <div className="text-center mt-16">
             <p className="text-gray-600 mb-8 text-lg">
-              Rejoignez notre communauté grandissante d'apprenants et de créateurs !
+              {"Rejoignez notre communauté grandissante d'apprenants et de créateurs !"}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
