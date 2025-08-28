@@ -56,10 +56,8 @@ export default function RootLayout({
       >
         <Providers>
           <Header currentPage="home" />
-          <main className="min-h-[70dvh] border-2 border-red-500">
-            {children}
-          </main>
-        <Footer/>
+          <main className="min-h-[70dvh]">{children}</main>
+          <Footer />
         </Providers>
 
         {/* Vercel Analytics peut être utilisé dans un Server Component */}
