@@ -184,7 +184,9 @@ export function Header({ currentPage }: HeaderProps) {
           <span className="relative inline-flex">
             <span className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#ff7100] to-[#ff9100] shadow-lg group-hover:shadow-orange-300/40 transition-all duration-300 overflow-hidden">
               <Image
-                src={"https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756396108/Logo_ikqveg.png"}
+                src={
+                  "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756396108/Logo_ikqveg.png"
+                }
                 alt="Logo du site"
                 fill
                 className="object-contain"
@@ -291,12 +293,14 @@ export function Header({ currentPage }: HeaderProps) {
                 <div className="flex items-center gap-3">
                   <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#ff7100] to-[#ff9100] shadow-lg">
                     <Image
-                      src="/images/logo.png"
-                      alt="Logo"
-                      width={400} // largeur désirée
-                      height={232} // hauteur recalculée pour garder le ratio
+                      src={
+                        "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756396108/Logo_ikqveg.png"
+                      }
+                      alt="Logo du site"
+                      fill
+                      className="object-contain"
                       priority
-                    />{" "}
+                    />
                   </span>
                   <span className=" font-poppins font-semibold text-gray-700 text-lg">
                     Aurora <span className="font-thin">Academy</span>
