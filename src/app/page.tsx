@@ -41,19 +41,20 @@ export default function HomePage() {
       color: "#ff7100",
       gradient: "from-orange-500 to-red-500",
     },
-    {
-      icon: Cpu,
-      title: t("home.artificialIntelligence"),
-      description: t("home.aiDescription"),
-      color: "#ff9100",
-      gradient: "from-orange-400 to-orange-600",
-    },
+
     {
       icon: Palette,
       title: t("home.digitalDesign"),
       description: t("home.designDescription"),
       color: "#d80e1f",
       gradient: "from-red-600 to-pink-600",
+    },
+    {
+      icon: Cpu,
+      title: t("home.artificialIntelligence"),
+      description: t("home.aiDescription"),
+      color: "#ff9100",
+      gradient: "from-orange-400 to-orange-600",
     },
     {
       icon: Globe,
@@ -462,7 +463,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12">
             {/* Aurora Kids Bootcamp */}
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-orange-50/50 hover:shadow-orange-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
@@ -500,6 +501,49 @@ export default function HomePage() {
                   // onClick={() => onNavigate('programs')}
                 >
                   <Sparkles className="w-5 h-5 mr-2 group-hover:animate-spin" />
+                  {t("home.learnMore")}
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Youth & Adults Program */}
+            <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-red-50/50 hover:shadow-red-200/50 transition-all duration-500 hover:scale-[1.02]">
+              <div className="relative h-64 overflow-hidden">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1674471361339-2e1e1dbd3e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjB3b3JraW5nJTIwY29tcHV0ZXJzfGVufDF8fHx8MTc1NTg4MzUyNnww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Young professionals working on computers"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <Badge className="bg-gradient-to-r from-[#d80e1f] to-[#ff5722] text-white px-4 py-2 font-bold">
+                    <Target className="w-4 h-4 mr-2" />
+                    {t("home.ages17plus")}
+                  </Badge>
+                </div>
+                <div className="absolute bottom-4 right-4">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
+                    <ArrowRight className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+              </div>
+
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl font-black text-[#ff7100] mb-2">
+                  {t("home.youthAdultsProgram")}
+                </CardTitle>
+                <CardDescription className="text-gray-600 leading-relaxed">
+                  {t("home.youthAdultsDescription")}
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent>
+                <Button
+                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  // onClick={() => onNavigate('programs')}
+                >
+                  <Zap className="w-5 h-5 mr-2 group-hover:animate-pulse" />
                   {t("home.learnMore")}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -640,7 +684,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section ultra-moderne */}
-      <section className="py-24 bg-gradient-to-r from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
+      <section className="py-24 inset-0 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
         {/* Animated background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black/20"></div>
@@ -687,22 +731,6 @@ export default function HomePage() {
                 {t("home.contactUs")}
                 <ChevronRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
               </Button>
-            </div>
-
-            {/* Social proof */}
-            <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-orange-100">
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="font-medium">48+ Étudiants Actifs</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-                <span className="font-medium">95% Taux de Réussite</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-pink-400 rounded-full animate-pulse"></div>
-                <span className="font-medium">100% Gratuit</span>
-              </div>
             </div>
           </div>
         </div>
