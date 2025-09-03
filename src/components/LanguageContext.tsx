@@ -37,18 +37,17 @@ const fr = {
     "Des formations flexibles et accessibles, adaptées à chaque âge et à chaque projet.",
   "home.becomePartner": "Devenir Partenaire",
   "home.studentsTrainedLabel": "Étudiants Formés",
-  "home.kidsBootcampLabel": "Enfants en Bootcamp Actuel",
+  "home.kidsBootcampLabel": "Enfants Formés",
 
   // Features Section
   "home.whatWeTeach": "Ce Que Nous Enseignons",
   "home.comprehensiveCurriculum":
     "Notre programme complet couvre les compétences numériques essentielles nécessaires pour la main-d'œuvre du futur",
   "home.codingProgramming": "Programmation & Développement",
-  "home.codingDescription":
-    "Apprenez les langages de programmation modernes et les compétences de développement",
+  "home.codingDescription": "Apprenez les langages de programmation modernes",
   "home.artificialIntelligence": "Intelligence Artificielle",
   "home.aiDescription":
-    "Explorez les concepts d'IA et les fondamentaux de l'apprentissage automatique",
+    "Maîtrisez le Prompt Engineering et l’AI Automation pour libérer la puissance de l’IA",
   "home.digitalDesign": "Design Numérique",
   "home.designDescription":
     "Maîtrisez le design graphique et les outils numériques créatifs",
@@ -60,7 +59,7 @@ const fr = {
   "home.ourPrograms": "Nos Programmes",
   "home.tailoredExperiences":
     "Expériences d'apprentissage sur mesure pour différents groupes d'âge et niveaux de compétence",
-  "home.auroraKidsBootcamp": "Bootcamp Aurora Kids",
+  "home.auroraKidsBootcamp": "Aurora Kids Bootcamp",
   "home.ages6to16": "Âges 6-16",
   "home.kidsBootcampDescription":
     "Expérience d'apprentissage amusante et interactive avec la programmation Scratch, l'alphabétisation numérique et l'exploration ludique de l'IA",
@@ -370,7 +369,7 @@ const en = {
     "Flexible and accessible training courses, tailored to every age group and every project.",
   "home.becomePartner": "Become a Partner",
   "home.studentsTrainedLabel": "Students Trained",
-  "home.kidsBootcampLabel": "Kids in Current Bootcamp",
+  "home.kidsBootcampLabel": "Kids Trained",
 
   // Features Section
   "home.whatWeTeach": "What We Teach",
@@ -380,7 +379,8 @@ const en = {
   "home.codingDescription":
     "Learn modern programming languages and development skills",
   "home.artificialIntelligence": "Artificial Intelligence",
-  "home.aiDescription": "Explore AI concepts and machine learning fundamentals",
+  "home.aiDescription":
+    "Master Prompt Engineering and AI Automation to unleash the power of AI",
   "home.digitalDesign": "Digital Design",
   "home.designDescription": "Master graphic design and creative digital tools",
   "home.webDevelopment": "Web Development",
