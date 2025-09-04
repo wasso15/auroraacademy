@@ -119,19 +119,19 @@ export default function HomePage() {
 
   const heroImages = [
     {
-      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846710/Aurora_Kids_178_hfzji1.jpg",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756846710/Aurora_Kids_178_hfzji1.jpg",
     },
     {
-      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846710/Aurora_Kids_35_jcrvso.jpg",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756846710/Aurora_Kids_35_jcrvso.jpg",
     },
     {
-      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846699/Aurora-09_25_zthrlz.jpg",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756846699/Aurora-09_25_zthrlz.jpg",
     },
     {
-      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846710/Beligo_35_zsjznv.jpg",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756846710/Beligo_35_zsjznv.jpg",
     },
     {
-      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756847457/Aurora_Kids_852575456_pi76gt.jpg",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756847457/Aurora_Kids_852575456_pi76gt.jpg",
     },
   ];
 
@@ -468,7 +468,7 @@ export default function HomePage() {
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-orange-50/50 hover:shadow-orange-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1743677077216-00a458eff9e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbGVhcm5pbmclMjByb2JvdGljcyUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MXx8fHwxNzU1ODgzNTIwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1757015825/Aurora_Kids_69_-1649735682_m49ikr.jpg"
                   alt="Kids learning robotics and AI"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -497,10 +497,9 @@ export default function HomePage() {
 
               <CardContent>
                 <Button
-                  className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                   // onClick={() => onNavigate('programs')}
                 >
-                  <Sparkles className="w-5 h-5 mr-2 group-hover:animate-spin" />
                   {t("home.learnMore")}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -511,17 +510,12 @@ export default function HomePage() {
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-red-50/50 hover:shadow-red-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1674471361339-2e1e1dbd3e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjB3b3JraW5nJTIwY29tcHV0ZXJzfGVufDF8fHx8MTc1NTg4MzUyNnww&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1757018699/Aurora-09-02_20_1462186066_zd2lka.jpg"
                   alt="Young professionals working on computers"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-gradient-to-r from-[#d80e1f] to-[#ff5722] text-white px-4 py-2 font-bold">
-                    <Target className="w-4 h-4 mr-2" />
-                    {t("home.ages17plus")}
-                  </Badge>
-                </div>
+
                 <div className="absolute bottom-4 right-4">
                   <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
                     <ArrowRight className="w-6 h-6 text-white" />
@@ -540,31 +534,25 @@ export default function HomePage() {
 
               <CardContent>
                 <Button
-                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                   // onClick={() => onNavigate('programs')}
                 >
-                  <Zap className="w-5 h-5 mr-2 group-hover:animate-pulse" />
                   {t("home.learnMore")}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Youth & Adults Program */}
+            {/* School Lab*/}
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-red-50/50 hover:shadow-red-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1674471361339-2e1e1dbd3e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjB3b3JraW5nJTIwY29tcHV0ZXJzfGVufDF8fHx8MTc1NTg4MzUyNnww&ixlib=rb-4.1.0&q=80&w=1080"
+                  src=""
                   alt="Young professionals working on computers"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-gradient-to-r from-[#d80e1f] to-[#ff5722] text-white px-4 py-2 font-bold">
-                    <Target className="w-4 h-4 mr-2" />
-                    {t("home.ages17plus")}
-                  </Badge>
-                </div>
+
                 <div className="absolute bottom-4 right-4">
                   <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
                     <ArrowRight className="w-6 h-6 text-white" />
@@ -574,16 +562,16 @@ export default function HomePage() {
 
               <CardHeader className="pb-4">
                 <CardTitle className="text-2xl font-black text-[#ff7100] mb-2">
-                  {t("home.youthAdultsProgram")}
+                  {t("home.SchoollLab")}
                 </CardTitle>
                 <CardDescription className="text-gray-600 leading-relaxed">
-                  {t("home.youthAdultsDescription")}
+                  {t("home.SchoollLabDescription")}
                 </CardDescription>
               </CardHeader>
 
               <CardContent>
                 <Button
-                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                   // onClick={() => onNavigate('programs')}
                 >
                   <Zap className="w-5 h-5 mr-2 group-hover:animate-pulse" />

@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { Menu, X, GraduationCap, Globe, Heart } from "lucide-react";
+import { Menu, Globe, Heart } from "lucide-react";
 import { useLanguage } from "../LanguageContext";
 import Image from "next/image";
 
@@ -185,7 +185,7 @@ export function Header({ currentPage }: HeaderProps) {
             <span className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#ff7100] to-[#ff9100] shadow-lg group-hover:shadow-orange-300/40 transition-all duration-300 overflow-hidden">
               <Image
                 src={
-                  "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756396108/Logo_ikqveg.png"
+                  "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756396108/Logo_ikqveg.png"
                 }
                 alt="Logo du site"
                 fill
@@ -291,10 +291,10 @@ export function Header({ currentPage }: HeaderProps) {
             >
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#ff7100] to-[#ff9100] shadow-lg">
+                  <span className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[#ff7100] to-[#ff9100] shadow-lg group-hover:shadow-orange-300/40 transition-all duration-300 overflow-hidden">
                     <Image
                       src={
-                        "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756396108/Logo_ikqveg.png"
+                        "https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756396108/Logo_ikqveg.png"
                       }
                       alt="Logo du site"
                       fill
