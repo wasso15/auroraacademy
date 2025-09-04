@@ -63,10 +63,13 @@ const fr = {
   "home.ages6to16": "Âges 6-16",
   "home.kidsBootcampDescription":
     "Expérience d'apprentissage amusante et interactive avec la programmation Scratch, l'alphabétisation numérique et l'exploration ludique de l'IA",
-  "home.youthAdultsProgram": "Programme Jeunes & Adultes",
+  "home.youthAdultsProgram": "Aurora Career",
   "home.ages17plus": "Âges 17+",
   "home.youthAdultsDescription":
     "Formation professionnelle en design graphique, développement web et compétences numériques avancées pour l'avancement de carrière",
+
+    "home.SchoollLab": "Aurora School Lab",
+    "home.SchoollLabDescription":"Initiation des élèves du primaire et du secondaire à la culture numérique, à la programmation Scratch, à l’IA et à la robotique, à travers des ateliers ludiques et innovants.",
   "home.learnMore": "En Savoir Plus",
 
   // Testimonials
@@ -394,10 +397,13 @@ const en = {
   "home.ages6to16": "Ages 6-16",
   "home.kidsBootcampDescription":
     "Fun and interactive learning experience with Scratch programming, digital literacy, and playful AI exploration",
-  "home.youthAdultsProgram": "Youth & Adults Program",
+  "home.youthAdultsProgram": "Aurora Career",
   "home.ages17plus": "Ages 17+",
   "home.youthAdultsDescription":
     "Professional training in graphic design, web development, and advanced digital skills for career advancement",
+
+    "home.SchoollLab": "Aurora School Lab",
+    "home.SchoollLabDescription":"Introduction of primary and secondary school students to digital literacy, Scratch programming, artificial intelligence, design, web development, and robotics through fun and innovative workshops.",
   "home.learnMore": "Learn More",
 
   // Testimonials
