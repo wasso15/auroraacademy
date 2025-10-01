@@ -10,8 +10,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import { Menu, Globe, Heart } from "lucide-react";
+} from "../ui/dropdown-menu"
+import { Menu, Globe, Heart, ChevronDown, Code, Laptop, Briefcase } from "lucide-react";
 import { useLanguage } from "../LanguageContext";
 import Image from "next/image";
 
@@ -25,14 +25,6 @@ const NAV_ITEMS = (t: (key: string) => string) => [
   { id: "home", href: "/", label: t("header.home") },
   { id: "programs", href: "/programs", label: t("header.programs") },
   { id: "about", href: "/about", label: t("header.about") },
-
-  //   { id: "impact", href: "/impact", label: t("header.impact") },
-  //   {
-  //     id: "partnerships",
-  //     href: "/partnerships",
-  //     label: t("header.partnerships"),
-  //   },
-  //   { id: "news", href: "/news", label: t("header.news") },
   { id: "gallery", href: "/gallery", label: t("header.gallery") },
   { id: "contact", href: "/contact", label: t("header.contact") },
 ];
@@ -77,6 +69,8 @@ function Flag({
   );
 }
 
+
+
 export function Header({ currentPage }: HeaderProps) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
@@ -99,6 +93,29 @@ export function Header({ currentPage }: HeaderProps) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  const programsSubMenu = [
+    {
+      id: "aurora-kids-bootcamp",
+      label: t("header.auroraKidsBootcamp"),
+      icon: Code,
+      description: "Âges 6-16 • Codage ludique & compétences numériques",
+      color: "from-blue-500 to-purple-600",
+    },
+    {
+      id: "aurora-school-lab",
+      label: t("header.auroraSchoolLab"),
+      icon: Laptop,
+      description: "Ateliers avancés & programmes scolaires",
+      color: "from-green-500 to-teal-600",
+    },
+    {
+      id: "aurora-career",
+      label: t("header.auroraCareer"),
+      icon: Briefcase,
+      description: "Compétences professionnelles & développement de carrière",
+      color: "from-orange-500 to-red-600",
+    },
+  ];
 
   const menuItems = React.useMemo(() => NAV_ITEMS(t), [t]);
 
@@ -204,22 +221,79 @@ export function Header({ currentPage }: HeaderProps) {
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
-          {menuItems.map((item) => {
-            const active = isActive(item.href, item.id);
-            return (
+ 
+
+        {/* Desktop Navigation ultra-minimaliste */}
+        <nav className="hidden lg:flex items-center gap-1">
+          {menuItems.map((item) =>
+            item.id === "programs" ? (
+              <DropdownMenu key={item.id}>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    className={`group relative px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-1 ${
+                      currentPage === item.id
+                        ? `${
+                            isScrolled
+                              ? "bg-[#ff7100] text-white"
+                              : "bg-white/20 text-white backdrop-blur-md"
+                          } shadow-md`
+                        : `${
+                            isScrolled
+                              ? "text-gray-700 hover:text-[#ff7100] hover:bg-gray-50"
+                              : "text-white/80 hover:text-white hover:bg-white/10"
+                          }`
+                    }`}
+                  >
+                    <span className="text-sm">{item.label}</span>
+                    <ChevronDown className="w-3 h-3 transition-transform group-data-[state=open]:rotate-180" />
+                    {currentPage === item.id && (
+                      <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                    )}
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="center"
+                  className="w-80 bg-white/95 backdrop-blur-xl border border-gray-200/50 shadow-2xl rounded-2xl p-2 mt-2"
+                  sideOffset={8}
+                >
+                  <div className="grid gap-1">
+                    {programsSubMenu.map((program) => (
+                      <Link
+                        key={program.id}
+                        href={`/programs/${program.id}`}
+                        className="group flex items-center gap-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer border-0"
+                      >
+                        <div
+                          className={`w-12 h-12 rounded-xl bg-gradient-to-br ${program.color} flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300`}
+                        >
+                          <program.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-bold text-gray-900 text-sm group-hover:text-[#ff7100] transition-colors">
+                            {program.label}
+                          </h4>
+                          <p className="text-xs text-gray-500 mt-1">
+                            {program.description}
+                          </p>
+                        </div>
+                        <div className="w-2 h-2 bg-[#ff7100] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </Link>
+                    ))}
+                   
+                  </div>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
               <Link
                 key={item.id}
                 href={item.href}
-                aria-current={active ? "page" : undefined}
-                className={`group relative px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-[1.02] ${
-                  active
+                className={`group relative px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 ${
+                  currentPage === item.id
                     ? `${
                         isScrolled
-                          ? "bg-[#ff7100] text-white shadow-sm"
+                          ? "bg-[#ff7100] text-white"
                           : "bg-white/20 text-white backdrop-blur-md"
-                      }`
+                      } shadow-md`
                     : `${
                         isScrolled
                           ? "text-gray-700 hover:text-[#ff7100] hover:bg-gray-50"
@@ -228,32 +302,18 @@ export function Header({ currentPage }: HeaderProps) {
                 }`}
               >
                 <span className="text-sm">{item.label}</span>
-                {active && (
-                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-yellow-400 rounded-full" />
+                {currentPage === item.id && (
+                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-yellow-400 rounded-full"></div>
                 )}
               </Link>
-            );
-          })}
+            )
+          )}
         </nav>
 
         {/* Actions desktop */}
         <div className="hidden lg:flex items-center gap-3">
           {/* {LangSwitcher} */}
 
-          {/* <Link href="/partnerships">
-            <Button
-              variant="outline"
-              size="sm"
-              className={`group font-medium px-4 py-2 rounded-lg transition-all duration-300 hover:scale-[1.02] ${
-                isScrolled
-                  ? "border border-gray-200 text-gray-700 hover:bg-gray-50 shadow-sm"
-                  : "border border-white/30 text-white hover:bg-white/10"
-              }`}
-            >
-              <Heart className="w-4 h-4 mr-2" aria-hidden />
-              <span className="text-sm">{t("header.becomePartner")}</span>
-            </Button>
-          </Link> */}
 
           <Link href="/programs">
             <Button
