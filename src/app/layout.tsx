@@ -7,7 +7,7 @@ import Providers from "@/components/Shared/Providers";
 import Footer from "@/components/Shared/Footer";
 
 const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
+  weight: ["300","400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-poppins",

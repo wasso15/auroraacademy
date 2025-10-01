@@ -15,20 +15,17 @@ import {
   Palette,
   Globe,
   ArrowRight,
-  Star,
   Heart,
   Award,
-  Target,
-  Sparkles,
   Zap,
   TrendingUp,
   Play,
-  ChevronRight,
-  Handshake,
-  Rocket,
+
 } from "lucide-react";
 import { useLanguage } from "@/components/LanguageContext";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
+import { TestimonialsSection } from "@/components/Shared/TestiamonialsSection";
+import CtaSection from "@/components/Shared/CtaSection";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -65,36 +62,30 @@ export default function HomePage() {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Marie Mukendi",
-      role: t("home.parent"),
-      content: t("home.testimonial1"),
-      avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      highlight: "confiance",
-    },
-    {
-      name: "Jean-Paul Kasongo",
-      role: t("home.student"),
-      content: t("home.testimonial2"),
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      highlight: "chatbot",
-    },
-    {
-      name: "Grace Kalala",
-      role: t("home.parent"),
-      content: t("home.testimonial3"),
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      highlight: "innovation",
-    },
-  ];
 
+
+
+    const testimonials: {
+      type: 'text' | 'video';
+      name: string;
+      role: string;
+      content: string;
+      videoThumbnail?: string;
+      videoDuration?: string;
+      youtubeUrl?: string;
+    }[] = [
+
+  {
+  type: 'video',
+  name: 'Moise SHOMBA',
+  role: t('home.student'),
+  content: t('home.testimonial2'),
+  videoThumbnail: 'https://images.unsplash.com/photo-1682617367184-5ccbda40e4a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjB0ZXN0aW1vbmlhbCUyMHZpZGVvJTIwY29uZmVyZW5jZXxlbnwxfHx8fDE3NTcwOTE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  videoDuration: '2:45',
+  youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
+},
+
+  ];
   const achievements = [
     {
       icon: Users,
@@ -148,7 +139,7 @@ export default function HomePage() {
           </div>
 
           {/* Geometric patterns */}
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-20">
             <svg className="w-full h-full" viewBox="0 0 1000 1000">
               <defs>
                 <pattern
@@ -584,145 +575,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section avec design ultra-moderne */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
-        {/* Background decorations */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-orange-200/30 to-red-200/30 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-pink-200/30 to-orange-200/30 rounded-full filter blur-3xl"></div>
-
-        <div className="container mx-auto max-w-7xl px-4 relative z-10">
-          <div className="text-center mb-20">
-            <Badge className="bg-white/80 backdrop-blur-md text-[#ff7100] border border-orange-200 mb-6 px-6 py-2 font-medium">
-              <Heart className="w-4 h-4 mr-2" />
-              Témoignages
-            </Badge>
-            <h2 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-              {t("home.whatCommunitySays")}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("home.realStories")}
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="group border-0 shadow-xl hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm hover:scale-105 relative overflow-hidden"
-              >
-                {/* Gradient border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ff7100] via-[#ff9100] to-[#d80e1f] p-[2px] rounded-2xl">
-                  <div className="h-full w-full bg-white rounded-2xl"></div>
-                </div>
-
-                <CardContent className="pt-8 relative z-10">
-                  {/* Stars avec animation */}
-                  <div className="flex items-center mb-6 justify-center">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-5 w-5 fill-yellow-400 text-yellow-400 animate-pulse"
-                        style={{ animationDelay: `${i * 0.1}s` }}
-                      />
-                    ))}
-                  </div>
-
-                  {/* Quote */}
-                  <blockquote className="text-gray-700 mb-6 text-center italic text-lg leading-relaxed">
-                    &quot;{testimonial.content}&quot;
-                  </blockquote>
-
-                  {/* Author */}
-                  <div className="flex items-center justify-center gap-4">
-                    <div className="relative">
-                      <ImageWithFallback
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
-                      />
-                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-400 rounded-full border-2 border-white flex items-center justify-center">
-                        <div className="w-2 h-2 bg-white rounded-full"></div>
-                      </div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-bold text-gray-900 text-lg">
-                        {testimonial.name}
-                      </div>
-                      <div className="text-[#ff7100] font-medium">
-                        {testimonial.role}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Highlight tag */}
-                  <div className="mt-4 text-center">
-                    <Badge
-                      variant="secondary"
-                      className="bg-gradient-to-r from-orange-100 to-red-100 text-[#ff7100] border-0"
-                    >
-                      <Sparkles className="w-3 h-3 mr-1" />
-                      {testimonial.highlight}
-                    </Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section ultra-moderne */}
-      <section className="py-24 inset-0 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-ping"></div>
-            <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-yellow-300 rounded-full animate-pulse"></div>
-            <div className="absolute top-1/2 left-3/4 w-3 h-3 bg-pink-300 rounded-full animate-bounce"></div>
-          </div>
-        </div>
-
-        <div className="container mx-auto max-w-7xl px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <Badge className="bg-white/20 backdrop-blur-md text-white border border-white/30 mb-8 px-6 py-3 text-lg font-bold">
-              <Rocket className="w-5 h-5 mr-2" />
-              Commencez Maintenant
-            </Badge>
-
-            <h2 className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
-              {t("home.readyToShape")}
-            </h2>
-
-            <p className="text-xl lg:text-2xl text-orange-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-              {t("home.joinBootcamp")}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button
-                size="lg"
-                className="group bg-white text-[#ff7100] hover:bg-gray-50 text-xl px-12 py-6 font-black shadow-2xl hover:shadow-white/25 hover:scale-110 transition-all duration-300 rounded-2xl"
-                // onClick={() => onNavigate('programs')}
-              >
-                <Play className="w-6 h-6 mr-3 group-hover:animate-pulse" />
-                {t("header.enrollNow")}
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="group border-2 border-white/50 text-white hover:bg-white/10 backdrop-blur-md text-xl px-12 py-6 font-black hover:scale-110 transition-all duration-300 rounded-2xl"
-                // onClick={() => onNavigate('contact')}
-              >
-                <Heart className="w-6 h-6 mr-3 group-hover:animate-pulse" />
-                {t("home.contactUs")}
-                <ChevronRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaSection/>
+      {/* Section Témoignages Ultra-Moderne */}
+      <TestimonialsSection testimonials={testimonials} />
     </div>
   );
 }

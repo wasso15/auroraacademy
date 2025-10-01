@@ -29,6 +29,12 @@ const fr = {
   "header.enrollNow": "Nos formations",
   "header.tagline": "Compétences Numériques & Formation IA",
 
+   // Programs Dropdown
+    'header.auroraKidsBootcamp': 'Aurora Kids Bootcamp',
+    'header.auroraSchoolLab': 'Aurora School Lab',
+    'header.auroraCareer': 'Aurora Career',
+    'header.allPrograms': 'Tous les Programmes',
+
   // Home Page
   "home.enrolling2025": "🚀 Inscriptions ouvertes pour 2025",
   "home.heroTitle": "École des métiers du futur",
@@ -79,7 +85,7 @@ const fr = {
   "home.testimonial1":
     "Ma fille a tellement grandi en confiance depuis qu'elle a rejoint Aurora Academy. Elle crée maintenant ses propres jeux !",
   "home.testimonial2":
-    "Les cours d'IA m'ont ouvert les yeux sur de nouvelles possibilités. Je construis maintenant mon propre projet de chatbot.",
+    "Grâce à Aurora Academy, j’ai pu développer mes compétences et devenir le premier graphiste de mon église.",
   "home.testimonial3":
     "Aurora Academy n'enseigne pas seulement la technologie - ils inspirent la créativité et l'innovation.",
   "home.parent": "Parent",
@@ -364,6 +370,12 @@ const en = {
   "header.enrollNow": "Enroll Now",
   "header.tagline": "Digital Skills & AI Training",
 
+     // Programs Dropdown
+    'header.auroraKidsBootcamp': 'Aurora Kids Bootcamp',
+    'header.auroraSchoolLab': 'Aurora School Lab',
+    'header.auroraCareer': 'Aurora Career',
+    'header.allPrograms': 'Tous les Programmes',
+
   // Home Page
   "home.enrolling2025": "🚀 Now Enrolling for 2025",
   "home.heroTitle": "School of Future Professions",
@@ -413,7 +425,7 @@ const en = {
   "home.testimonial1":
     "My daughter has grown so much in confidence since joining Aurora Academy. She now creates her own games!",
   "home.testimonial2":
-    "The AI courses opened my eyes to new possibilities. I'm now building my own chatbot project.",
+    "Thanks to Aurora Academy, I was able to develop my skills and become the first graphic designer in my church",
   "home.testimonial3":
     "Aurora Academy doesn't just teach technology - they inspire creativity and innovation.",
   "home.parent": "Parent",
