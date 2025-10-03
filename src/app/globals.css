@@ -1,3 +1,48 @@
+/* Local fonts (placed in public/fonts) ------------------------------------------------ */
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +58,9 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
+    /* expose font family names as CSS variables for use with next/font and Tailwind */
+    --font-cooperhewitt: 'Cooper Hewitt';
+    --font-spacemono: 'Space Mono';
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;

@@ -94,12 +94,11 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
             Ils Parlent de Nous
           </h2>
           
-          <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg lg:text-xl font-cooperhewitt text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Découvrez comment Aurora Academy transforme des vies et inspire la prochaine génération de créateurs numériques.
           </p>
         </div>
 
-        {/* Carousel principal avec design ultra-moderne */}
         <div className="relative">
           {/* Navigation arrows avec glassmorphism */}
           <button
@@ -131,29 +130,29 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                     {/* Gradient decoratif */}
                     <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#ff7100] via-[#ff9100] to-[#d80e1f]"></div>
                     
-                    <CardContent className="px-12 py-16">
+                    <CardContent className=" px-1 lg:px-12 py-5 lg:py-16">
                       <div className="grid lg:grid-cols-12 gap-8 items-center">
                         {/* Colonne gauche - Contenu */}
                         <div className="lg:col-span-7 space-y-2">
                           {/* Quote icon avec animation */}
                           <div className="relative mb-16">
-                            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-[#ff7100]/10 to-[#ff9100]/10 rounded-full flex items-center justify-center">
-                              <Quote className="w-12 h-12 text-[#ff7100] transform rotate-180" />
+                            <div className="absolute -top-4 -left-4 w-16  h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-[#ff7100]/10 to-[#ff9100]/10 rounded-full flex items-center justify-center">
+                              <Quote className=" h-9 w-9  lg:w-12 lg:h-12 text-[#ff7100] transform rotate-180" />
                             </div>
                           </div>
 
                           {/* Contenu du témoignage */}
-                          <blockquote className="text-2xl lg:text-3xl text-gray-800  ">
+                          <blockquote className="text-[22px]  md:text-3xl  font-cooperhewitt font-medium leading-tight text-gray-800 ">
                            {testimonial.content}
                           </blockquote>
 
                           {/* Mot-clé en surbrillance */}
-                          <div className="inline-block">
+                          <div className="inline-block ">
                              <div className="">
-                            <h3 className=" font-semibold text-gray-900">
+                            <h3 className="text-xs md:text-sm  font-cooperhewitt text-gray-900">
                               {testimonial.name}
                             </h3>
-                            <p className="text-sm text-[#ff7100] ">
+                            <p className="text-xs md:text-sm text-[#ff7100] font-cooperhewitt font-light ">
                               {testimonial.role}
                             </p>
                             
@@ -165,31 +164,57 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                         <div className="lg:col-span-5 space-y-6">
                           {/* Video ou Avatar section */}
                           {testimonial.type === 'video' ? (
-                            <div className="relative">
-                              {playingVideo === index ? (
-                                // Iframe YouTube en mode lecture
-                                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
-                                  <iframe
-                                    src={getYouTubeEmbedUrl(testimonial.youtubeUrl)}
-                                    className="w-full h-full"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    title={`Témoignage de ${testimonial.name}`}
-                                  />
-                                  
-                                  {/* Bouton de fermeture */}
-                                  <button
-                                    onClick={closeVideo}
-                                    className="absolute top-4 right-4 w-10 h-10 bg-black/50 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all duration-300 z-10"
-                                  >
-                                    <X className="w-5 h-5" />
-                                  </button>
-                                  
-                                
-                                </div>
-                              ) :""}
-                            </div>
-                          ) : ""}
+  <div className="relative">
+    {playingVideo === index ? (
+      // Iframe YouTube
+      <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
+        <iframe
+          src={getYouTubeEmbedUrl(testimonial.youtubeUrl)}
+          className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title={`Témoignage de ${testimonial.name}`}
+        />
+        <button
+          onClick={closeVideo}
+          className="absolute top-4 right-4 w-10 h-10 bg-black/50 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all duration-300 z-10"
+        >
+          <X className="w-5 h-5" />
+        </button>
+      </div>
+    ) : (
+      // ✅ Fallback : thumbnail vidéo avec bouton play
+      <div
+        className="relative aspect-video rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+        onClick={() => handleVideoPlay(index)}
+      >
+        <ImageWithFallback
+          src={testimonial.videoThumbnail || "/placeholder.jpg"}
+          alt={`Thumbnail vidéo de ${testimonial.name}`}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <Play className="w-14 h-14 text-white group-hover:scale-110 transition-transform duration-300" />
+        </div>
+        {testimonial.videoDuration && (
+          <span className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md">
+            {testimonial.videoDuration}
+          </span>
+        )}
+      </div>
+    )}
+  </div>
+) : (
+  // ✅ Fallback pour type texte (par ex. avatar)
+  <div className="flex flex-col items-center">
+    <ImageWithFallback
+      src="/avatar-placeholder.png"
+      alt={testimonial.name}
+      className="w-32 h-32 rounded-full object-cover shadow-lg"
+    />
+  </div>
+)}
+
 
                           {/* Profile info avec design ultra-moderne */}
                        

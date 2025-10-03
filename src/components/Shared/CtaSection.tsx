@@ -33,7 +33,7 @@ export default function CtaSection() {
                 <ImageWithFallback
                   src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759339957/Aurora-Certif_185_-505231893_ov2eai.jpg"
                   alt="Étudiants africains réussissant en technologie"
-                  className="w-full h-[350px] lg:h-[460px] object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-[370px] lg:h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 left-3">
@@ -45,7 +45,7 @@ export default function CtaSection() {
             </div>
 
             {/* Version flottante (desktop) */}
-            <div className="hidden lg:block">
+            <div className="hidden md:block">
               <div className="absolute -top-10 -left-8 w- h-28 rounded-2xl overflow-hidden border-4 border-white/30 shadow-2xl rotate-[-15deg] hover:rotate-0 transition-transform duration-500">
                 <ImageWithFallback
                   src="https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1759344468/Aurora-Certif_167_1_-1322952860_yh4rz3.jpg"
@@ -64,19 +64,19 @@ export default function CtaSection() {
           </div>
 
           {/* Texte section */}
-          <div className="lg:col-span-7 text-left">
-            <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-4 leading-snug">
+          <div className="lg:col-span-7 text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl  lg:text-6xl font-black mb-4 ">
               {t("home.readyToShape")}
             </h2>
 
-            <p className="text-[16px]  md:text-sm lg:text-2xl font-light text-orange-100 mb-8 sm:mb-10 max-w-3xl leading-tight">
+            <p className="text-[16.5px]  md:text-lg lg:text-2xl font-cooperhewitt   text-orange-100 mb-8 sm:mb-10 max-w-3xl leading-tight">
               {t("home.joinBootcamp")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
               <Button
                 size="lg"
-                className="w-full sm:w-auto group bg-white text-[#ff7100] font-medium text-[14px] hover:bg-gray-50 px-8 sm:px-10 py-4 sm:py-6 hover:scale-105 transition-all duration-300 rounded-xl"
+                className="w-full sm:w-auto group bg-white text-[#ff7100] font-semibold text-[14px] hover:bg-gray-50 px-8 sm:px-10 py-6 sm:py-6 hover:scale-105 transition-all duration-300 rounded-xl"
               >
                 Inscrivez-vous
               </Button>

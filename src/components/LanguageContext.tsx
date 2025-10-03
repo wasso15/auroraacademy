@@ -305,7 +305,7 @@ const fr = {
 
   // Contact Page
   "contact.contactUs": "Nous Contacter",
-  "contact.getInTouch": "Entrer en Contact",
+  "contact.getInTouch": "Nous Contacter",
   "contact.readyToStart":
     "Prêt à commencer votre parcours avec Aurora Academy ? Nous aimerions avoir de vos nouvelles.",
   "contact.sendMessage": "Envoyez-nous un Message",
