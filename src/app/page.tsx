@@ -168,7 +168,7 @@ export default function HomePage() {
               {/* Titre principal avec effet typing */}
               <div className="space-y-4 ">
                 <h1 className=" textce font-poppins mt-10 lg:mt-0 text-6xl lg:text-6xl xl:text-7xl font-black">
-                  <span className="block  text-center lg:text-left bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
+                  <span className="block  text-center md:text-left bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
                     {t("home.heroTitle")}
                   </span>
                   <span className="block text-white drop-shadow-2xl relative">
@@ -177,7 +177,7 @@ export default function HomePage() {
                   </span>
                 </h1>
 
-                <p className=" font-cooperhewitt font-normal text-center lg:text-left text-lg  lg:text-xl xl:text-xl text-orange-100 max-w-2xl leading-tight">
+                <p className=" font-cooperhewitt font-normal text-center md:text-left text-lg  md:text-xl text-orange-100 max-w-2xl leading-tight">
                   {t("home.heroSubtitle")} 
                 </p>
               </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
           </div>
 
           {/* Statistics Grid avec images intégrées */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {achievements.map((achievement, index) => (
               <Card
                 key={index}
@@ -423,8 +423,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Aurora Kids Bootcamp */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {/* Aurora Kids Bootcamp */} 
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-orange-50/50 hover:shadow-orange-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
