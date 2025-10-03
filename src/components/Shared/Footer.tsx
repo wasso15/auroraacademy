@@ -111,18 +111,18 @@ function Footer() {
           </p>
 
               {/* Social Links */}
-              <div className="flex gap-3">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className={`group w-12 h-12 bg-gradient-to-br ${social.color} rounded-xl flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl`}
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5 text-white group-hover:animate-pulse" />
-                  </a>
-                ))}
-              </div>
+           <div className="flex gap-3 justify-center md:justify-start">
+  {socialLinks.map((social, index) => (
+    <a
+      key={index}
+      href={social.href}
+      className={`group w-12 h-12 bg-gradient-to-br ${social.color} rounded-xl flex items-center justify-center hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl`}
+      aria-label={social.label}
+    >
+      <social.icon className="w-5 h-5 text-white group-hover:animate-pulse" />
+    </a>
+  ))}
+</div>
             </div>
 
             {/* Programs Links */}
