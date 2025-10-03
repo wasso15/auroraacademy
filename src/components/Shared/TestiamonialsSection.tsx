@@ -142,17 +142,17 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                           </div>
 
                           {/* Contenu du témoignage */}
-                          <blockquote className="text-[22px]  md:text-3xl  font-cooperhewitt font-medium leading-tight text-gray-800 ">
+                          <blockquote className="text-[22px] text-center md:text-left  md:text-3xl  font-cooperhewitt font-medium leading-tight text-gray-800 ">
                            {testimonial.content}
                           </blockquote>
 
                           {/* Mot-clé en surbrillance */}
-                          <div className="inline-block ">
+                          <div className="inline-block border-1 w-full md:w-auto ">
                              <div className="">
-                            <h3 className="text-xs md:text-sm  font-cooperhewitt text-gray-900">
+                            <h3 className="text-xs text-center md:text-left md:text-sm  font-cooperhewitt text-gray-900">
                               {testimonial.name}
                             </h3>
-                            <p className="text-xs md:text-sm text-[#ff7100] font-cooperhewitt font-light ">
+                            <p className="text-xs text-center md:text-left  md:text-sm text-[#ff7100] font-cooperhewitt font-light ">
                               {testimonial.role}
                             </p>
                             
