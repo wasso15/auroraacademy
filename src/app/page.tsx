@@ -81,7 +81,7 @@ export default function HomePage() {
   role: t('home.student'),
   content: t('home.testimonial2'),
   videoThumbnail: 'https://images.unsplash.com/photo-1682617367184-5ccbda40e4a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjB0ZXN0aW1vbmlhbCUyMHZpZGVvJTIwY29uZmVyZW5jZXxlbnwxfHx8fDE3NTcwOTE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  videoDuration: '2:45',
+  videoDuration: '0:48',
   youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
 },
 
@@ -167,8 +167,8 @@ export default function HomePage() {
             <div className="lg:col-span-6 space-y-8 text-white">
               {/* Titre principal avec effet typing */}
               <div className="space-y-4 ">
-                <h1 className=" textce font-poppins text-6xl lg:text-6xl xl:text-7xl font-black">
-                  <span className="block bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
+                <h1 className=" textce font-poppins mt-10 lg:mt-0 text-6xl lg:text-6xl xl:text-7xl font-black">
+                  <span className="block  text-center lg:text-left bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
                     {t("home.heroTitle")}
                   </span>
                   <span className="block text-white drop-shadow-2xl relative">
@@ -177,8 +177,8 @@ export default function HomePage() {
                   </span>
                 </h1>
 
-                <p className=" font-poppins font-normal text-sm lg:text-xl xl:text-xl text-orange-100 max-w-2xl leading-relaxed">
-                  {t("home.heroSubtitle")}
+                <p className=" font-cooperhewitt font-normal text-center lg:text-left text-lg  lg:text-xl xl:text-xl text-orange-100 max-w-2xl leading-tight">
+                  {t("home.heroSubtitle")} 
                 </p>
               </div>
 
@@ -195,7 +195,7 @@ export default function HomePage() {
             </div>
 
             {/* Galerie d'images épurée - 6 colonnes */}
-            <div className="lg:col-span-6 relative">
+            <div className=" mt-5 lg:mt-0 lg:col-span-6 relative">
               {/* Image principale épurée */}
               <div className="relative">
                 <div className="relative z-10 mb-6">
@@ -273,14 +273,13 @@ export default function HomePage() {
         <div className="container mx-auto max-w-7xl px-4 relative z-10">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <Badge className="bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white mb-6 px-6 py-2 text-sm font-medium">
-              <TrendingUp className="w-4 h-4 mr-2" />
+            <Badge className="bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white mb-6 px-6 py-3 text-[16px]  font-medium">
               Notre Impact en Chiffres
             </Badge>
             <h2 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
               Des Résultats Concrets
             </h2>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto font-cooperhewitt leading-relaxed">
               {
                 "Chaque chiffre raconte une histoire de transformation et d'innovation dans l'éducation numérique."
               }
@@ -332,35 +331,6 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-
-          {/* Call to Action */}
-          {/* <div className="text-center mt-16">
-            <p className="text-gray-600 mb-8 text-lg">
-              {
-                "Rejoignez notre communauté grandissante d'apprenants et de créateurs !"
-              }
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="group bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                // onClick={() => onNavigate('impact')}
-              >
-                <Award className="w-5 h-5 mr-2 group-hover:animate-pulse" />
-                Voir Notre Impact Complet
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="group border-2 border-[#ff7100] text-[#ff7100] hover:bg-[#ff7100] hover:text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
-                // onClick={() => onNavigate('programs')}
-              >
-                <Sparkles className="w-5 h-5 mr-2 group-hover:animate-spin" />
-                Commencer Maintenant
-              </Button>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -378,14 +348,13 @@ export default function HomePage() {
 
         <div className="container mx-auto max-w-7xl px-4 relative z-10">
           <div className="text-center mb-20">
-            <Badge className="bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white mb-6 px-6 py-2 text-sm font-medium">
-              <Zap className="w-4 h-4 mr-2" />
+            <Badge className="bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white mb-6 px-6 py-3 text-[16px] font-medium">
               Programmes Innovants
             </Badge>
             <h2 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
               {t("home.whatWeTeach")}
             </h2>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl font-cooperhewitt text-gray-600 max-w-4xl mx-auto leading-relaxed">
               {t("home.comprehensiveCurriculum")}
             </p>
           </div>
@@ -449,7 +418,7 @@ export default function HomePage() {
             <h2 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
               {t("home.ourPrograms")}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl font-cooperhewitt text-gray-600 max-w-3xl mx-auto">
               {t("home.tailoredExperiences")}
             </p>
           </div>
@@ -518,7 +487,7 @@ export default function HomePage() {
                 <CardTitle className="text-2xl font-black text-[#ff7100] mb-2">
                   {t("home.youthAdultsProgram")}
                 </CardTitle>
-                <CardDescription className="text-gray-600 leading-relaxed">
+                <CardDescription className="text-gray-600  leading-relaxed">
                   {t("home.youthAdultsDescription")}
                 </CardDescription>
               </CardHeader>
@@ -538,7 +507,7 @@ export default function HomePage() {
             <Card className="group overflow-hidden shadow-2xl border-0 bg-gradient-to-br from-white to-red-50/50 hover:shadow-red-200/50 transition-all duration-500 hover:scale-[1.02]">
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
-                  src=""
+                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759506038/F5KcPEGWoAApqJZ_hieea2.png"
                   alt="Young professionals working on computers"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />

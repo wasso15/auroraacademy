@@ -7,11 +7,13 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-  	extend: {
+	theme: {
+	extend: {
 		fontFamily: {
 			poppins: ["var(--font-poppins)", "sans-serif"],
-		  },
+			cooperhewitt: ["var(--font-cooperhewitt)", "sans-serif"],
+			spacemono: ["var(--font-spacemono)", "monospace"],
+		},
   		container: {
   			center: true,
   			screens: {
