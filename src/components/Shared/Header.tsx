@@ -368,42 +368,90 @@ export function Header({ currentPage }: HeaderProps) {
                 </div>
               </div>
 
-              <nav
-                className="flex flex-col gap-2 font-poppins "
-                aria-label="Mobile"
-              >
-                {menuItems.map((item) => {
-                  const active = isActive(item.href, item.id);
-                  return (
-                    <Link
-                      key={item.id}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className={`group flex items-center text-left p-4 rounded-lg transition-all duration-300 hover:scale-[1.01] ${
-                        active
-                          ? "bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white shadow-sm"
-                          : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-                      }`}
-                    >
-                      <span className="font-normal  text-sm">{item.label}</span>
-                      {active && (
-                        <span className="ml-auto w-2 h-2 bg-yellow-400 rounded-full" />
-                      )}
-                    </Link>
-                  );
-                })}
+             <nav className="flex flex-col gap-2 font-poppins" aria-label="Mobile">
+  {menuItems.map((item) => {
+    const active = isActive(item.href, item.id);
 
-                <div className="flex flex-col gap-3 mt-8 pt-6 border-t border-gray-200">
-                  <Link href="/programs" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium py-6 rounded-lg shadow-lg">
-                      <Heart className="w-4 h-4 mr-1" aria-hidden />
-                      <span className="text-sm">
-                        {t("header.becomePartner")}
-                      </span>
-                    </Button>
-                  </Link>
-                </div>
-              </nav>
+    // Si c’est "programs", on gère un sous-menu
+    if (item.id === "programs") {
+      const [openPrograms, setOpenPrograms] = React.useState(false);
+      return (
+        <div key={item.id} className="flex flex-col">
+          <button
+            onClick={() => setOpenPrograms(!openPrograms)}
+            className={`group flex items-center justify-between p-4 rounded-lg transition-all duration-300 hover:scale-[1.01] ${
+              active
+                ? "bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white shadow-sm"
+                : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+            }`}
+          >
+            <span className="font-normal text-sm">{item.label}</span>
+            <ChevronDown
+              className={`w-4 h-4 transition-transform duration-300 ${
+                openPrograms ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+
+          {openPrograms && (
+            <div className="ml-4 mt-2 flex flex-col gap-2 border-l border-gray-200 pl-3">
+              {programsSubMenu.map((program) => (
+                <Link
+                  key={program.id}
+                  href={`/programs/${program.id}`}
+                  onClick={() => setIsOpen(false)}
+                  className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300"
+                >
+                  <div
+                    className={`p-2 rounded-lg bg-gradient-to-br ${program.color} flex items-center justify-center shadow-md`}
+                  >
+                    <program.icon className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-semibold text-gray-700 group-hover:text-[#ff7100]">
+                      {program.label}
+                    </span>
+                    <span className="text-[10px] leading-tight text-gray-500">
+                      {program.description}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    // Les autres liens normaux
+    return (
+      <Link
+        key={item.id}
+        href={item.href}
+        onClick={() => setIsOpen(false)}
+        className={`group flex items-center text-left p-4 rounded-lg transition-all duration-300 hover:scale-[1.01] ${
+          active
+            ? "bg-gradient-to-r from-[#ff7100] to-[#ff9100] text-white shadow-sm"
+            : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+        }`}
+      >
+        <span className="font-normal text-sm">{item.label}</span>
+        {active && (
+          <span className="ml-auto w-2 h-2 bg-yellow-400 rounded-full" />
+        )}
+      </Link>
+    );
+  })}
+
+  <div className="flex flex-col gap-3 mt-8 pt-6 border-t border-gray-200">
+    <Link href="/programs" onClick={() => setIsOpen(false)}>
+      <Button className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium py-6 rounded-lg shadow-lg">
+        <Heart className="w-4 h-4 mr-1" aria-hidden />
+        <span className="text-sm">{t("header.becomePartner")}</span>
+      </Button>
+    </Link>
+  </div>
+</nav>
             </SheetContent>
           </Sheet>
         </div>

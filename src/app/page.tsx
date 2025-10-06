@@ -283,14 +283,7 @@ export default function HomePage() {
                 key={index}
                 className="group border-0 shadow-xl hover:shadow-2xl text-center transition-all duration-500 hover:scale-110 bg-white/80 backdrop-blur-sm overflow-hidden relative"
               >
-                {/* Image de fond */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
-                  <ImageWithFallback
-                    src={heroImages[index % heroImages.length].url}
-                    alt={achievement.label}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              
 
                 <CardContent className="pt-8 pb-8 relative z-10">
                   <div className="relative mb-6">
@@ -298,7 +291,7 @@ export default function HomePage() {
                       <achievement.icon className="w-10 h-10 text-[#ff7100] group-hover:animate-pulse" />
                     </div>
                     {/* Trend Badge */}
-                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-bounce shadow-lg">
+                    <div className="absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-[10px] font-medium px-3 py-2 rounded-xl animate-bounce shadow-lg">
                       {achievement.trend}
                     </div>
                   </div>
