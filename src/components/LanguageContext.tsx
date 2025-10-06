@@ -103,7 +103,7 @@ const fr = {
   "about.buildingLeaders":
     "Construire les Leaders Numériques de Demain à Kinshasa",
   "about.foundedBelief":
-    "Créée en 2024, Aurora Academy est une école de formation professionnelle dédiée à l’apprentissage du numérique pour tous les âges et tous les horizons. De l’enfant curieux au jeune en quête de compétences, jusqu’au professionnel en reconversion, nous proposons des programmes adaptés à chaque niveau pour faire émerger le potentiel de chacun. Nos formations préparent les apprenants à relever les défis du monde moderne, à concevoir des solutions innovantes et à intégrer les meilleures entreprises de la RDC et d’ailleurs.",
+    "Créée en 2024, Aurora Academy est une école de formation professionnelle dédiée à l’apprentissage du numérique pour tous les âges et tous les horizons. De l’enfant curieux au jeune en quête de compétences, jusqu’au professionnel en reconversion, nous proposons des programmes adaptés à chaque niveau pour faire émerger le potentiel de chacun.",
   "about.ourMission": "Notre Mission",
   "about.missionText":
     "Fournir une éducation technologique accessible et de haute qualité qui autonomise les enfants, adolescents et jeunes adultes de Kinshasa avec les compétences numériques nécessaires pour réussir dans l'économie du 21e siècle tout en favorisant l'innovation et l'impact social.",
