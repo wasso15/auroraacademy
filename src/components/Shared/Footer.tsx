@@ -148,11 +148,11 @@ function Footer() {
           <h4 className="font-black text-lg md:text-xl mb-4 md:mb-6">
             {t("footer.quickLinks")}
           </h4>
-          <ul className="space-y-2 md:space-y-3">
+          <ul className="space-y-4 md:space-y-4">
             {footerQuickLinks.map((item, index) => (
-              <Link href={item.page} key={index}>
+              <Link href={item.page}  key={index}>
                 <li>
-                  <button className="group flex items-center gap-2 md:gap-3 mx-auto md:mx-0 text-gray-300 hover:text-[#ff9100] transition-colors duration-300">
+                  <button className="group flex mb-3 items-center gap-2 md:gap-3 mx-auto md:mx-0 text-gray-300 hover:text-[#ff9100] transition-colors duration-300">
                     <span className="group-hover:translate-x-1 transition-transform duration-300 text-sm md:text-base">
                       {item.label}
                     </span>
@@ -200,7 +200,7 @@ function Footer() {
         />
         <Button
           size="sm"
-          className="w-full sm:w-auto bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] px-3"
+          className="w-full py-6 sm:w-auto bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] px-3"
         >
           <Send className="w-4 h-4" />
         </Button>

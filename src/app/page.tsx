@@ -139,26 +139,16 @@ export default function HomePage() {
           </div>
 
           {/* Geometric patterns */}
-          <div className="absolute inset-0 opacity-20">
-            <svg className="w-full h-full" viewBox="0 0 1000 1000">
-              <defs>
-                <pattern
-                  id="grid"
-                  width="50"
-                  height="50"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <path
-                    d="M 50 0 L 0 0 0 50"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="1"
-                  />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-          </div>
+               <div className="absolute inset-0 opacity-10">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <defs>
+            <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" strokeWidth="1" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
         </div>
 
         <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20">
@@ -177,7 +167,7 @@ export default function HomePage() {
                   </span>
                 </h1>
 
-                <p className=" font-cooperhewitt font-normal text-center md:text-left text-lg  md:text-xl text-orange-100 max-w-2xl leading-tight">
+                <p className=" font-cooperhewitt font-normal text-center md:text-left text-lg  md:text-[26.5px] text-orange-100 max-w-2xl leading-tight">
                   {t("home.heroSubtitle")} 
                 </p>
               </div>

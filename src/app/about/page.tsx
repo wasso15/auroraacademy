@@ -14,6 +14,9 @@ import {
   Lightbulb,
   Rocket,
   Sparkles,
+  Accessibility,
+  Crown,
+  Handshake,
 } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageContext';
 
@@ -22,19 +25,14 @@ export default function AboutPage() {
 
   const values = [
     {
-      icon: Lightbulb,
-      title: t('about.innovation'),
-      description: t('about.innovationDesc'),
+      icon: Accessibility,
+      title: t('about.accessibility'),
+      description: t('about.accessibilityDesc'),
       color: 'from-yellow-400 to-orange-500',
     },
+  
     {
-      icon: Heart,
-      title: t('about.communityImpact'),
-      description: t('about.communityDesc'),
-      color: 'from-pink-400 to-red-500',
-    },
-    {
-      icon: Users,
+      icon: Crown,
       title: t('about.inclusiveLearning'),
       description: t('about.inclusiveDesc'),
       color: 'from-blue-400 to-purple-500',
@@ -47,8 +45,39 @@ export default function AboutPage() {
     },
   ];
 
+    const partnerLogos = [
+    {
+      name: 'Microsoft',
+      logo: 'https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaWNyb3NvZnQlMjBsb2dvJTIwY29tcGFueSUyMGJyYW5kfGVufDF8fHx8MTc1OTc1Mjc0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'Google',
+      logo: 'https://images.unsplash.com/photo-1746046936818-8d432ebd3d0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBsb2dvJTIwdGVjaCUyMGNvbXBhbnl8ZW58MXx8fHwxNzU5NzUyNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'Apple',
+      logo: 'https://images.unsplash.com/photo-1758467700789-d6f49099c884?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHBsZSUyMGxvZ28lMjBicmFuZCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU5NzUyNzU2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'Université de Kinshasa',
+      logo: 'https://images.unsplash.com/photo-1721441906254-b5d28d9114f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbG9nbyUyMGVkdWNhdGlvbiUyMGluc3RpdHV0aW9ufGVufDF8fHx8MTc1OTc1Mjc1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'IBM',
+      logo: 'https://images.unsplash.com/photo-1628760584600-6c31148991e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpYm0lMjBsb2dvJTIwdGVjaG5vbG9neSUyMGNvbXBhbnl8ZW58MXx8fHwxNzU5NzUyNzcxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'Microsoft',
+      logo: 'https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaWNyb3NvZnQlMjBsb2dvJTIwY29tcGFueSUyMGJyYW5kfGVufDF8fHx8MTc1OTc1Mjc0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    },
+    {
+      name: 'Google',
+      logo: 'https://images.unsplash.com/photo-1746046936818-8d432ebd3d0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBsb2dvJTIwdGVjaCUyMGNvbXBhbnl8ZW58MXx8fHwxNzU5NzUyNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    }
+  ];
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-poppins">
       {/* Hero Section - Qui sommes-nous */}
       <section className="py-32 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
         {/* Animated background effects */}
@@ -63,42 +92,23 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4 relative z-10">
           <div className="grid lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7 space-y-8">
-              <Badge className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2">
-                <Users className="w-4 h-4 mr-2" />
-                {t('about.aboutAurora')}
-              </Badge>
+             
 
               <div className="space-y-6">
-                <h1 className="text-4xl lg:text-6xl font-black text-white leading-tight">
-                  Qui <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent">sommes-nous</span>
+                <h1 className=" text-center md:text-left text-4xl lg:text-6xl font-black text-white leading-tight">
+                  Qui sommes-nous
                 </h1>
-                <p className="text-xl text-orange-100 leading-relaxed max-w-2xl">
+                <p className="text-xl font-cooperhewitt text-orange-100 max-w-2xl font-thin leading-relaxed text-justify">
                   {t('about.foundedBelief')}
                 </p>
               </div>
 
-              <div className="flex items-center gap-8 pt-4">
-                <div className="text-center">
-                  <div className="text-3xl font-black text-white">48+</div>
-                  <div className="text-sm text-orange-200">Étudiants formés</div>
-                </div>
-                <div className="w-px h-12 bg-white/30"></div>
-                <div className="text-center">
-                  <div className="text-3xl font-black text-white">3</div>
-                  <div className="text-sm text-orange-200">Années d&apos;expertise</div>
-                </div>
-                <div className="w-px h-12 bg-white/30"></div>
-                <div className="text-center">
-                  <div className="text-3xl font-black text-white">95%</div>
-                  <div className="text-sm text-orange-200">Taux de réussite</div>
-                </div>
-              </div>
             </div>
 
             <div className="lg:col-span-5 relative">
               <div className="relative">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjBjb2RpbmclMjBlZHVjYXRpb258ZW58MXx8fHwxNzU5NTE0NzE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759754923/Aurora_51_1_1102365895_p5sbi2.jpg"
                   alt="Étudiants africains en formation technologique"
                   className="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
                 />
@@ -120,17 +130,17 @@ export default function AboutPage() {
       {/* Nos Objectifs */}
       <section className="py-32 bg-gray-50">
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="text-center mb-20">
+          {/* <div className="text-center mb-20">
             <Badge className="bg-white text-[#ff7100] border border-[#ff7100]/20 mb-6 px-6 py-2">
-              <Target className="w-4 h-4 mr-2" />
+              <Target className="w-6 h-6 mr-2" />
               Nos Objectifs
             </Badge>
-            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
               Notre <span className="bg-gradient-to-r from-[#ff7100] to-[#d80e1f] bg-clip-text text-transparent">Mission</span>
-            </h2>
-          </div>
+            </h2> 
+          </div> */}
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-8">
               <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
                 <CardHeader className="pb-6">
@@ -142,7 +152,7 @@ export default function AboutPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className=" text-gray-600 leading-relaxed mb-4">
                     {t('about.missionText')}
                   </p>
                 </CardContent>
@@ -158,7 +168,7 @@ export default function AboutPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed mb-4">
                     {t('about.visionText')}
                   </p>
                 </CardContent>
@@ -167,7 +177,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1719159381981-1327b22aff9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tJTIwYWZyaWNhfGVufDF8fHx8MTc1OTUxNDcyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759754937/Aurora_Kids_35_1_-1566730116_chvedm.jpg"
                 alt="Salle de classe technologique en Afrique"
                 className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
               />
@@ -185,14 +195,14 @@ export default function AboutPage() {
               Nos Valeurs
             </Badge>
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-              Ce qui nous <span className="bg-gradient-to-r from-[#ff7100] to-[#d80e1f] bg-clip-text text-transparent">guide</span>
+              Ce qui nous guide
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl text-gray-600 max-w-3xl font-cooperhewitt mx-auto leading-relaxed">
               {t('about.guidingPrinciples')}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className=" mb-24 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <Card key={index} className="group border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 text-center bg-white relative overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${value.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
@@ -240,21 +250,21 @@ export default function AboutPage() {
                 {t('about.buildingMovement')}
               </p>
 
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-2 gap-3">
                 <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
-                  <div className="text-4xl font-black text-[#ff7100] mb-2">100%</div>
+                  <div className="text-4xl font-black text-[#ff7100] mb-2">0%</div>
                   <div className="text-orange-200 mb-1 font-medium">{t('about.scholarshipStudents')}</div>
                   <p className="text-sm text-gray-400">{t('about.freePrograms')}</p>
                 </div>
 
                 <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
-                  <div className="text-4xl font-black text-[#ff9100] mb-2">85%</div>
+                  <div className="text-4xl font-black text-[#ff9100] mb-2">25%</div>
                   <div className="text-orange-200 mb-1 font-medium">{t('about.femaleParticipation')}</div>
                   <p className="text-sm text-gray-400">{t('about.genderEquality')}</p>
                 </div>
 
                 <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 col-span-2">
-                  <div className="text-4xl font-black text-[#d80e1f] mb-2">3</div>
+                  <div className="text-4xl font-black text-[#d80e1f] mb-2">0</div>
                   <div className="text-orange-200 mb-1 font-medium">{t('about.communityPartnerships')}</div>
                   <p className="text-sm text-gray-400">{t('about.expandReach')}</p>
                 </div>
@@ -265,7 +275,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-6">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1674049406486-4b1f6e1845fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGxlYXJuaW5nJTIwY29tcHV0ZXJzJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzU5NTE0NzI0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="https://res.cloudinary.com/dfy1hmq1b/image/upload/f_auto,q_auto/v1756847457/Aurora_Kids_852575456_pi76gt.jpg"
                     alt="Enfants apprenant la programmation"
                     className="w-full h-48 object-cover rounded-2xl shadow-xl"
                   />
@@ -285,7 +295,7 @@ export default function AboutPage() {
                   </div>
 
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1758873268631-fa944fc5cad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG1vZGVybiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NTk1MTQ3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759766892/Aurora-Certif_172_-1478623027_yek2th.jpg"
                     alt="Collaboration en équipe dans un espace moderne"
                     className="w-full h-48 object-cover rounded-2xl shadow-xl"
                   />
@@ -293,6 +303,45 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+       <section className=" py-32 bg-white">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center mb-16">
+            <Badge className="bg-gradient-to-r from-[#ff7100]/10 to-[#d80e1f]/10 text-[#ff7100] border border-[#ff7100]/20 mb-4 px-4 py-2">
+              <Handshake className="w-4 h-4 mr-2" />
+              Nos Partenaires
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">
+              Ils nous font <span className="bg-gradient-to-r from-[#ff7100] to-[#d80e1f] bg-clip-text text-transparent">confiance</span>
+            </h2>
+          </div>
+
+          {/* Carousel Container */}
+          <div className="relative overflow-hidden">
+            {/* Gradient masks */}
+            <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+            
+            {/* Animated carousel */}
+            <div className="flex animate-[scroll_30s_linear_infinite] gap-12 items-center">
+              {partnerLogos.map((partner, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-40 h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110"
+                >
+                  <ImageWithFallback
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain filter brightness-75 hover:brightness-100 transition-all duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+         
         </div>
       </section>
     </div>

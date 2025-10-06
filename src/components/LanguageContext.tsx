@@ -99,33 +99,42 @@ const fr = {
 
   // About Page
   "about.aboutAurora": "À Propos d'Aurora Academy",
+  
   "about.buildingLeaders":
     "Construire les Leaders Numériques de Demain à Kinshasa",
   "about.foundedBelief":
-    "Aurora Academy est née d'une conviction simple : chaque enfant mérite l'accès à une éducation technologique de qualité, quel que soit son milieu. Nous avons pour mission de démocratiser les compétences numériques et d'autonomiser la prochaine génération d'innovateurs africains.",
+    "Créée en 2024, Aurora Academy est une école de formation professionnelle dédiée à l’apprentissage du numérique pour tous les âges et tous les horizons. De l’enfant curieux au jeune en quête de compétences, jusqu’au professionnel en reconversion, nous proposons des programmes adaptés à chaque niveau pour faire émerger le potentiel de chacun. Nos formations préparent les apprenants à relever les défis du monde moderne, à concevoir des solutions innovantes et à intégrer les meilleures entreprises de la RDC et d’ailleurs.",
   "about.ourMission": "Notre Mission",
   "about.missionText":
     "Fournir une éducation technologique accessible et de haute qualité qui autonomise les enfants, adolescents et jeunes adultes de Kinshasa avec les compétences numériques nécessaires pour réussir dans l'économie du 21e siècle tout en favorisant l'innovation et l'impact social.",
   "about.ourVision": "Notre Vision",
   "about.visionText":
-    "Devenir le hub d'éducation technologique leader en Afrique centrale, créant une génération d'innovateurs numériquement alphabétisés qui stimuleront l'avancement technologique et la croissance économique à travers le continent.",
+    "Aurora Academy aspire à devenir un acteur de référence en Afrique dans le domaine de la formation numérique.Notre vision est de former une génération de talents compétents et créatifs, capables de répondre aux exigences d’un marché en constante évolution, tout en contribuant activement au développement économique et social du continent.",
 
   // Values
   "about.ourValues": "Nos Valeurs",
   "about.guidingPrinciples":
     "Les principes qui guident tout ce que nous faisons à Aurora Academy",
   "about.innovation": "Innovation",
+  "about.accessibility": "Accessibilité ",
+  "about.accessibilityDesc": "Le savoir numérique doit être à la portée de tous..",
+
+  "about.Excellence ": "Excellence",
+  "about.ExcellenceDesc": " Nous visons la qualité dans nos méthodes, nos projets et nos résultats.",
+
+"about.futureReady": "Impact ",
+  "about.futureDesc":
+    " Nous croyons à un numérique au service du progrès, de l’emploi et de la sociétés",
+
   "about.innovationDesc":
     "Nous favorisons la créativité et la pensée innovante chez chaque étudiant",
   "about.communityImpact": "Impact Communautaire",
   "about.communityDesc":
     "Notre mission est de transformer les vies et les communautés par l'éducation",
-  "about.inclusiveLearning": "Apprentissage Inclusif",
+  "about.inclusiveLearning": "Excellence",
   "about.inclusiveDesc":
-    "Nous offrons des opportunités égales à tous les enfants, quel que soit leur milieu",
-  "about.futureReady": "Prêt pour l'Avenir",
-  "about.futureDesc":
-    "Nous préparons les étudiants aux emplois et défis de demain",
+    " Nous visons la qualité dans nos méthodes, nos projets et nos résultats",
+  
 
   // Journey
   "about.ourJourney": "Notre Parcours",
