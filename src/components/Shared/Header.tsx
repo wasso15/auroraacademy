@@ -125,6 +125,7 @@ export function Header({ currentPage }: HeaderProps) {
     if (pathname?.startsWith(href)) return true;
     return currentPage === id;
   };
+  const [openPrograms, setOpenPrograms] = React.useState(false);
 
   const LangSwitcher = (
     <DropdownMenu>
@@ -374,7 +375,6 @@ export function Header({ currentPage }: HeaderProps) {
 
     // Si c’est "programs", on gère un sous-menu
     if (item.id === "programs") {
-      const [openPrograms, setOpenPrograms] = React.useState(false);
       return (
         <div key={item.id} className="flex flex-col">
           <button

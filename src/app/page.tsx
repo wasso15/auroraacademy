@@ -173,7 +173,7 @@ export default function HomePage() {
               </div>
 
               {/* Boutons avec effets */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   size="lg"
                   className="group bg-white text-[#ff7100] font-semibold hover:bg-gray-50 text-[16px] px-8 py-6  shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300"
@@ -181,7 +181,7 @@ export default function HomePage() {
                 >
                   {t("header.enrollNow")}
                 </Button>
-              </div>
+              </div> */}
             </div>
 
             {/* Galerie d'images épurée - 6 colonnes */}
@@ -214,7 +214,7 @@ export default function HomePage() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="w-8 h-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
-                              <Play className="w-4 h-4 text-white ml-0.5" />
+                              {/* <Play className="w-4 h-4 text-white ml-0.5" /> */}
                             </div>
                           </div>
                         </div>
@@ -244,7 +244,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator épuré */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" >
           <div className="bg-white/20 backdrop-blur-md rounded-full p-3 border border-white/30">
             <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
