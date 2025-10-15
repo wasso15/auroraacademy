@@ -5,6 +5,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Shared/Header";
 import Providers from "@/components/Shared/Providers";
 import Footer from "@/components/Shared/Footer";
+import { GoogleTagManager } from '@next/third-parties/google';
+
 
 const poppins = Poppins({
   weight: ["300","400", "500", "600", "700"],
@@ -51,6 +53,8 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       {/* Utilisez la variable de police pour Tailwind: font-sans via --font-poppins */}
+      <GoogleTagManager gtmId="GTM-53GC23X4" />
+
       <body
         className={`${poppins.variable} min-h-dvh  bg-white text-gray-900 antialiased`}
       >
