@@ -25,7 +25,7 @@ const NAV_ITEMS = (t: (key: string) => string) => [
   { id: "home", href: "/", label: t("header.home") },
   { id: "programs", href: "/programs", label: t("header.programs") },
   { id: "about", href: "/about", label: t("header.about") },
-  { id: "gallery", href: "/gallery", label: t("header.gallery") },
+  { id: "gallery", href: "/Gallery", label: t("header.gallery") },
   { id: "contact", href: "/contact", label: t("header.contact") },
 ];
 

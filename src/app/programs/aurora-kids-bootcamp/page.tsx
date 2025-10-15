@@ -236,8 +236,8 @@ export default function AuroraKidsBootcampPage() {
             <div className="space-y-8">
               
               
-              <h1 className="text-3xl lg:text-6xl font-black leading-tight">
-                Transformez la <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent">curiosité</span> de vos enfants en compétences numériques
+              <h1 className="text-4xl lg:text-6xl font-black leading-tight">
+                Transformez la curiosité de vos enfants en compétences numériques
               </h1>
               
               <p className="text-xl lg:text-2xl font-cooperhewitt text-orange-100 leading-relaxed">
@@ -264,7 +264,7 @@ export default function AuroraKidsBootcampPage() {
       </section>
 
       {/* 2. Explication détaillée du programme */}
-      <section className="py-24 bg-white">
+      <section className=" pt-24 pb-14 bg-white">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-20">
             
@@ -277,8 +277,8 @@ export default function AuroraKidsBootcampPage() {
           </div>
 
           {/* Main Program Description */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-10">
-              <Card className="border-0 shadow-xl p-7 bg-gradient-to-br from-orange-50 to-white overflow-hidden relative">
+          <div className="grid lg:grid-cols-2 gap-12 mb-2">
+              <Card className="border-0 shadow-xl  lg:p-7 bg-gradient-to-br from-orange-50 to-white overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#ff7100]/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
                 <CardHeader>
                   <CardTitle className="text-2xl font-black text-gray-900 flex items-center gap-3">
@@ -299,16 +299,16 @@ export default function AuroraKidsBootcampPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#ff7100]/20 to-transparent"></div>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed  ">
+                  <p className="text-gray-600 leading-relaxed text-sm lg:text-base"> 
                     Aurora Kids Bootcamp est bien plus qu&apos;un simple programme d&apos;apprentissage informatique. C&apos;est une <span className="font-bold text-[#ff7100]">expérience transformatrice</span> qui éveille la curiosité naturelle des enfants et la transforme en compétences concrètes pour le 21ème siècle.
                   </p>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-sm lg:text-base">
                     Nous croyons que chaque enfant possède un potentiel créatif unique. Notre mission est de leur donner les <span className="font-bold text-[#ff7100]">outils, les connaissances et la confiance</span> nécessaires pour devenir les innovateurs, créateurs et leaders technologiques de demain.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-xl p-7 bg-gradient-to-br from-blue-50 to-white overflow-hidden relative">
+              <Card className="border-0 shadow-xl lg:p-7 bg-gradient-to-br from-blue-50 to-white overflow-hidden relative">
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-transparent rounded-full translate-y-16 -translate-x-16"></div>
                 <CardHeader>
                   <CardTitle className="text-2xl font-black text-gray-900 flex items-center gap-3">
@@ -366,7 +366,7 @@ export default function AuroraKidsBootcampPage() {
         </div>
       </section>
 
-       <section className="py-24 bg-white">
+       <section className="pb-14 bg-white">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-20">
             <Badge className="bg-gradient-to-r from-[#ff7100]/10 to-[#d80e1f]/10 text-[#ff7100] border border-[#ff7100]/20 mb-6 px-6 py-2">
@@ -498,20 +498,6 @@ export default function AuroraKidsBootcampPage() {
                               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             </div>
                             
-                            {/* Overlay content */}
-                            <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                              <h4 className="font-black text-white text-lg mb-2 drop-shadow-lg">
-                                {image.title}
-                              </h4>
-                              <p className="text-orange-200 text-sm font-cooperhewitt leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                                {image.description}
-                              </p>
-                            </div>
-
-                            {/* Badge number */}
-                            <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-[#ff7100] to-[#ff9100] rounded-full flex items-center justify-center font-black text-white shadow-lg">
-                              {index + 1}
-                            </div>
                           </div>
                         </CardContent>
                       </Card>
@@ -519,8 +505,8 @@ export default function AuroraKidsBootcampPage() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex -left-12 bg-white/20 backdrop-blur-md border-white/30 text-white hover:bg-white hover:text-[#ff7100] transition-all duration-300" />
-              <CarouselNext className="hidden md:flex -right-12 bg-white/20 backdrop-blur-md border-white/30 text-white hover:bg-white hover:text-[#ff7100] transition-all duration-300" />
+              <CarouselPrevious className="hidden p-6 md:flex -left-12 bg-white/20 backdrop-blur-md border-white/30 text-white hover:bg-white hover:text-[#ff7100] transition-all duration-300" />
+              <CarouselNext className="hidden p-6 md:flex -right-12 bg-white/20 backdrop-blur-md border-white/30 text-white hover:bg-white hover:text-[#ff7100] transition-all duration-300" />
             </Carousel>
           </div>
 
