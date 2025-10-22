@@ -52,7 +52,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      {/* Utilisez la variable de police pour Tailwind: font-sans via --font-poppins */}
       <GoogleTagManager gtmId="GTM-53GC23X4" />
 
       <body

@@ -83,7 +83,7 @@ export default function AuroraKidsBootcampPage() {
       duration: "8 semaines",
       level: "Débutant à Intermédiaire",
       skills: ["Logique algorithmique", "Créativité numérique", "Résolution de problèmes"],
-      image: "https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGNvZGluZyUyMHByb2dyYW1taW5nJTIwd29ya3Nob3AlMjBhZnJpY2F8ZW58MXx8fHwxNzU5NzgzMzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760750452/Aurora_Kids_11_-2021319999_tquddy.jpg",
       icon: Code,
       gradient: "from-blue-500 to-cyan-600"
     },
@@ -95,7 +95,7 @@ export default function AuroraKidsBootcampPage() {
       duration: "6 semaines",
       level: "Intermédiaire",
       skills: ["Compréhension IA", "Création chatbots", "Pensée analytique"],
-      image: "https://images.unsplash.com/photo-1574803442176-70d4b465c920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMEFJJTIwZWR1Y2F0aW9ufGVufDF8fHx8MTc1OTc4MzM2MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760751486/Aurora_Kids_52_1557323876_atpezb.jpg",
       icon: Bot,
       gradient: "from-purple-500 to-pink-600"
     },
@@ -107,22 +107,22 @@ export default function AuroraKidsBootcampPage() {
       duration: "4 semaines",
       level: "Tous niveaux",
       skills: ["Sécurité en ligne", "Éthique numérique", "Communication digitale"],
-      image: "https://images.unsplash.com/photo-1714859100446-ed641aeea95c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwY3JlYXRpdml0eSUyMGtpZHMlMjBhcnQlMjBkZXNpZ258ZW58MXx8fHwxNzU5NzgzMzU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756847457/Aurora_Kids_852575456_pi76gt.jpg",
       icon: Shield,
       gradient: "from-green-500 to-teal-600"
     },
-    {
-      title: "Robotique",
-      subtitle: "Construction & Programmation",
-      description: "Construction et programmation de robots, ateliers STEM pratiques pour comprendre la mécanique et l'électronique.",
-      ageRange: "8-16 ans",
-      duration: "10 semaines",
-      level: "Débutant à Avancé",
-      skills: ["Construction mécanique", "Programmation robots", "Travail d'équipe"],
-      image: "https://images.unsplash.com/photo-1568585262983-9b54814595a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbGVhcm5pbmclMjByb2JvdGljcyUyMFNURU0lMjBlZHVjYXRpb258ZW58MXx8fHwxNzU5NzgzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      icon: Cpu,
-      gradient: "from-orange-500 to-red-600"
-    }
+    // {
+    //   title: "Robotique",
+    //   subtitle: "Construction & Programmation",
+    //   description: "Construction et programmation de robots, ateliers STEM pratiques pour comprendre la mécanique et l'électronique.",
+    //   ageRange: "8-16 ans",
+    //   duration: "10 semaines",
+    //   level: "Débutant à Avancé",
+    //   skills: ["Construction mécanique", "Programmation robots", "Travail d'équipe"],
+    //   image: "https://images.unsplash.com/photo-1568585262983-9b54814595a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwbGVhcm5pbmclMjByb2JvdGljcyUyMFNURU0lMjBlZHVjYXRpb258ZW58MXx8fHwxNzU5NzgzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    //   icon: Cpu,
+    //   gradient: "from-orange-500 to-red-600"
+    // }
   ];
 
   const testimonials = [
@@ -146,19 +146,19 @@ export default function AuroraKidsBootcampPage() {
     {
       icon: Calendar,
       title: "Prochaines sessions",
-      content: "Du 15 janvier au 15 mars 2025\nVacances de Pâques : 7-21 avril 2025",
+      content: "\nVacances de Pâques : 7-21 avril 2025",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: Clock,
       title: "Horaires",
-      content: "Lundi-Vendredi : 14h-17h\nSamedi : 9h-12h\nDimanche : Repos",
+      content: "Lundi-Vendredi : 09h-14h\nSamedi : 9h-12h\nDimanche : Repos",
       color: "from-green-500 to-green-600"
     },
     {
       icon: MapPin,
       title: "Lieu",
-      content: "Aurora Academy\nKinshasa, Gombe\nMode hybride disponible",
+      content: "24 Novembre , En face de l'academie de Beaux Arts\nAurora Academy\nKinshasa, Gombe",
       color: "from-purple-500 to-purple-600"
     },
     {
@@ -170,59 +170,49 @@ export default function AuroraKidsBootcampPage() {
   ];
 
   const investorStats = [
-    { value: "200+", label: "Enfants à former", icon: Users },
+    { value: "300+", label: "Enfants à former", icon: Users },
     { value: "85%", label: "Taux de réussite", icon: TrendingUp },
-    { value: "4", label: "Programmes innovants", icon: Rocket },
-    { value: "50+", label: "Familles impactées", icon: Heart }
+    { value: "3", label: "Programmes innovants", icon: Rocket },
+    { value: "10+", label: "Familles impactées", icon: Heart }
   ];
 
   const carouselImages = [
     {
-      url: "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGxlYXJuaW5nJTIwY29kaW5nJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzYwMTEwMzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1757015825/Aurora_Kids_69_-1649735682_m49ikr.jpg",
       title: "Apprentissage du Coding",
       description: "Nos jeunes développeurs créent leurs premiers programmes"
     },
-    {
-      url: "https://images.unsplash.com/photo-1623287072519-d224cfbac5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwY2xhc3Nyb29tJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjAxMTA0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Environnement Joyeux",
-      description: "L'apprentissage dans la bonne humeur et l'enthousiasme"
+     {
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846710/Aurora_Kids_178_hfzji1.jpg",
+      title: "Apprentissage du Coding",
+      description: "Nos jeunes développeurs créent leurs premiers programmes"
     },
-    {
-      url: "https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwdGVhbXdvcmslMjBjb2xsYWJvcmF0aW9uJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzYwMTEwNDAwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Travail en Équipe",
-      description: "Collaboration et entraide pour des projets réussis"
+
+       {
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846698/Beligo_23_rkwilj.jpg",
+      title: "Apprentissage du Coding",
+      description: "Nos jeunes développeurs créent leurs premiers programmes"
     },
-    {
-      url: "https://images.unsplash.com/photo-1629873289739-a191ba51b2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHJvYm90aWNzJTIwU1RFTSUyMGVkdWNhdGlvbnxlbnwxfHx8fDE3NjAxMTA0MDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Robotique & STEM",
-      description: "Construction et programmation de robots innovants"
+
+         {
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1756846710/Beligo_35_zsjznv.jpg",
+      title: "Apprentissage du Coding",
+      description: "Nos jeunes développeurs créent leurs premiers programmes"
     },
-    {
-      url: "https://images.unsplash.com/photo-1612446485216-2dc52fc0bb05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwY2VsZWJyYXRpbmclMjBzdWNjZXNzJTIwYWNoaWV2ZW1lbnR8ZW58MXx8fHwxNzYwMTEwNDAxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Célébration des Succès",
-      description: "Chaque victoire est célébrée avec fierté et joie"
+
+      {
+      url: "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1759754937/Aurora_Kids_35_1_-1566730116_chvedm.jpg",
+      title: "Apprentissage du Coding",
+      description: "Nos jeunes développeurs créent leurs premiers programmes"
     },
-    {
-      url: "https://images.unsplash.com/photo-1523396140703-e5bdad4e5dea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwY2hpbGRyZW4lMjB0ZWNobm9sb2d5JTIwY29tcHV0ZXJ8ZW58MXx8fHwxNzYwMTEwNDAxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Technologie Accessible",
-      description: "Des outils modernes pour tous les enfants"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1759646828783-7e1b8f02f89b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGNyZWF0aXZlJTIwd29ya3Nob3AlMjBsZWFybmluZ3xlbnwxfHx8fDE3NjAxMTA0MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Ateliers Créatifs",
-      description: "Libérer la créativité à travers la technologie"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1758270705172-07b53627dfcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwa2lkcyUyMHN0dWR5aW5nJTIwdG9nZXRoZXJ8ZW58MXx8fHwxNzYwMTEwNDAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      title: "Diversité & Inclusion",
-      description: "Tous ensemble pour apprendre et grandir"
-    }
+    
+   
   ];
 
   return (
     <div className="min-h-screen font-poppins">
       {/* 1. Hero Section */}
-      <section className=" py-40 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
+      <section className=" py-24 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
         {/* Background animations */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-white rounded-full animate-ping"></div>
@@ -231,31 +221,28 @@ export default function AuroraKidsBootcampPage() {
           <div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-blue-300 rounded-full animate-ping delay-1000"></div>
         </div>
 
-        <div className="container mx-auto max-w-7xl px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto max-w-7xl px-4 relative  z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center ">
             <div className="space-y-8">
               
               
-              <h1 className="text-4xl lg:text-6xl font-black leading-tight">
-                Transformez la curiosité de vos enfants en compétences numériques
-              </h1>
+              <h1 className="text-5xl  text-center font-poppins lg:text-left lg:text-[65px] leading-none font-black ">
+Éveillez la créativité, formez les talents de demain              </h1>
               
-              <p className="text-xl lg:text-2xl font-cooperhewitt text-orange-100 leading-relaxed">
+              <p className=" text-lg text-center lg:text-left lg:text-2xl font-cooperhewitt text-orange-100 leading-none">
                 Formation immersive pour les enfants de <span className="font-bold text-white">6 à 16 ans</span> en Coding, IA, Culture Numérique et Robotique
               </p>
                
             </div>
             
             <div className="relative">
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+              <div className="relative overflow-hidden ">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1540058404349-2e5fabf32d75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGNvZGluZyUyMHByb2dyYW1taW5nJTIwd29ya3Nob3AlMjBhZnJpY2F8ZW58MXx8fHwxNzU5NzgzMzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760730025/Kids-5_2x_tsowsa.png"
                   alt="Enfants en formation de programmation"
-                  className="w-full h-96 object-cover"
+                  className="w-full md:h-[550px] lg:h-[670px]  object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
-              {/* Floating badges */}
             
             
             </div>
@@ -268,16 +255,16 @@ export default function AuroraKidsBootcampPage() {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-20">
             
-            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
               C&apos;est quoi <span className="bg-gradient-to-r from-[#ff7100] to-[#d80e1f] bg-clip-text text-transparent">Aurora Kids Bootcamp</span> ?
             </h2>
-            <p className="text-xl font-cooperhewitt text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="lg:text-xl font-cooperhewitt text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Un programme d&apos;excellence conçu pour préparer les enfants de 6 à 16 ans aux métiers et défis du monde numérique de demain.
             </p>
           </div>
 
           {/* Main Program Description */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-2">
+          <div className="grid md:grid-cols-2 gap-6  lg:gap-12 mb-2">
               <Card className="border-0 shadow-xl  lg:p-7 bg-gradient-to-br from-orange-50 to-white overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#ff7100]/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
                 <CardHeader>
@@ -292,7 +279,7 @@ export default function AuroraKidsBootcampPage() {
                   {/* Image illustrative */}
                   <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6">
                     <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGxlYXJuaW5nJTIwY29kaW5nJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzYwMTEwMzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                      src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760750364/Aurora_Kids_54_1_2012348447_thniku.jpg"
                       alt="Enfants apprenant le coding"
                       className="w-full h-48 object-cover"
                     />
@@ -322,9 +309,9 @@ export default function AuroraKidsBootcampPage() {
                   {/* Image illustrative */}
                   <div className="relative overflow-hidden rounded-2xl shadow-lg mb-6">
                     <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwdGVhbXdvcmslMjBjb2xsYWJvcmF0aW9uJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzYwMTEwNDAwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                      src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760731401/IMG_6482_-1848993558_tjwawq.jpg"
                       alt="Enfants travaillant en équipe"
-                      className="w-full h-48 object-cover"
+                      className="w-full h-48 object-cover "
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent"></div>
                   </div>
@@ -343,10 +330,7 @@ export default function AuroraKidsBootcampPage() {
   title: "Gamification",
   description: "Un apprentissage inspiré du jeu vidéo pour motiver, récompenser les progrès et rendre chaque session amusante."
 },
-                      {
-                        title: "Environnement ludique",
-                        description: "L'apprentissage se fait dans la joie et l'amusement avec des défis stimulants."
-                      }
+                     
                     ].map((item, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <div className="w-6 h-6 bg-gradient-to-br from-[#ff7100] to-[#ff9100] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
