@@ -26,6 +26,7 @@ import { useLanguage } from "@/components/LanguageContext";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { TestimonialsSection } from "@/components/Shared/TestiamonialsSection";
 import CtaSection from "@/components/Shared/CtaSection";
+import Link from "next/link";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -171,17 +172,6 @@ export default function HomePage() {
                   {t("home.heroSubtitle")} 
                 </p>
               </div>
-
-              {/* Boutons avec effets */}
-              {/* <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button
-                  size="lg"
-                  className="group bg-white text-[#ff7100] font-semibold hover:bg-gray-50 text-[16px] px-8 py-6  shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all duration-300"
-                  // onClick={() => onNavigate("programs")}
-                >
-                  {t("header.enrollNow")}
-                </Button>
-              </div> */}
             </div>
 
             {/* Galerie d'images épurée - 6 colonnes */}
@@ -214,7 +204,6 @@ export default function HomePage() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="w-8 h-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
-                              {/* <Play className="w-4 h-4 text-white ml-0.5" /> */}
                             </div>
                           </div>
                         </div>
@@ -376,7 +365,7 @@ export default function HomePage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center relative z-10">
-                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed">
+                  <p className="text-gray-600 font-poppins group-hover:text-gray-700 transition-colors duration-300 leading-tight ">
                     {feature.description}
                   </p>
 
@@ -439,13 +428,15 @@ export default function HomePage() {
               </CardHeader>
 
               <CardContent>
+                 <Link
+                href={"/programs/aurora-kids-bootcamp"}
+                >
                 <Button
                   className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  // onClick={() => onNavigate('programs')}
                 >
                   {t("home.learnMore")}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -476,13 +467,16 @@ export default function HomePage() {
               </CardHeader>
 
               <CardContent>
+                <Link
+                href={"/programs/aurora-career"}
+                >
                 <Button
                   className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                   // onClick={() => onNavigate('programs')}
                 >
                   {t("home.learnMore")}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -513,14 +507,16 @@ export default function HomePage() {
               </CardHeader>
 
               <CardContent>
+                 <Link
+                href={"/programs/aurora-school-lab"}
+                >
                 <Button
                   className="w-full bg-gradient-to-r from-[#d80e1f] to-[#ff5722] hover:from-[#b71c1c] hover:to-[#e64a19] text-white font-medium py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                   // onClick={() => onNavigate('programs')}
                 >
-                  <Zap className="w-5 h-5 mr-2 group-hover:animate-pulse" />
                   {t("home.learnMore")}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>

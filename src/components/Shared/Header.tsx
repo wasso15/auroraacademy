@@ -93,6 +93,7 @@ export function Header({ currentPage }: HeaderProps) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   const programsSubMenu = [
     {
       id: "aurora-kids-bootcamp",
@@ -269,11 +270,11 @@ export function Header({ currentPage }: HeaderProps) {
                         >
                           <program.icon className="w-6 h-6 text-white" />
                         </div>
-                        <div className="flex-1">
-                          <h4 className="font-bold text-gray-900 text-sm group-hover:text-[#ff7100] transition-colors">
+                        <div className="flex-1 font-poppins">
+                          <h4 className=" font-semibold text-gray-900 text-sm group-hover:text-[#ff7100] transition-colors">
                             {program.label}
                           </h4>
-                          <p className="text-xs text-gray-500 mt-1">
+                          <p className="text-xs text-gray-500  font-cooperhewitt">
                             {program.description}
                           </p>
                         </div>
@@ -411,7 +412,7 @@ export function Header({ currentPage }: HeaderProps) {
                     <span className="text-sm font-semibold text-gray-700 group-hover:text-[#ff7100]">
                       {program.label}
                     </span>
-                    <span className="text-[10px] leading-tight text-gray-500">
+                    <span className="text-[10px] leading-tight font-cooperhewitt text-gray-500">
                       {program.description}
                     </span>
                   </div>
