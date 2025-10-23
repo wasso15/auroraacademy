@@ -301,12 +301,32 @@ const timelineEvents: TimelineEvent[] =
     "month": "Mai",
     "year": "2025",
     "title": "Lancement de la 3ᵉ cohorte en graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Lancement de la troisième cohorte en graphisme avec la participation de 23 nouveaux apprenants passionnés de design numérique.",
-    "participants": 23,
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Lancement de la troisième cohorte en graphisme avec la participation de 20 nouveaux apprenants passionnés de design numérique.",
+    "participants": 20,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247591/gallery/Aurora_13_ejdnqe.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247589/gallery/Aurora_30_2_xckiuz.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247588/gallery/Aurora_26_vi8oxx.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247589/gallery/Aurora_35_pv0zn4.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+    ]
   },
   {
     "id": "9",
@@ -314,12 +334,31 @@ const timelineEvents: TimelineEvent[] =
     "month": "Juin",
     "year": "2025",
     "title": "Avant-dernière séance de formation - graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Avant-dernière séance du programme de graphisme, marquée par les projets collaboratifs de 17 apprenants.",
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Avant-dernière séance du programme de graphisme, marquée par les projets collaboratifs de 12 apprenants.",
     "participants": 17,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247933/gallery/Aurora_52_pylgsu.jpg",
+      "alt": "Coach presentant sur ecran geant - aurora academy"
+    },
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247941/gallery/Aurora_6_eqvc6k.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247934/gallery/Aurora_43_a8bljz.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247936/gallery/Aurora_56_dx1zrm.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+    ]
   },
   {
     "id": "10",
@@ -332,7 +371,23 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248290/gallery/Beligo_26_ic4flt.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248292/gallery/Beligo_58_ueipad.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248294/gallery/Beligo_35_vbpr35.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+    ]
   },
   {
     "id": "11",
@@ -340,12 +395,32 @@ const timelineEvents: TimelineEvent[] =
     "month": "Août",
     "year": "2025",
     "title": "Jour 3 - Introduction au coding avec Scratch",
-    "location": "Aurora Academy - Campus Principal",
+    "location": "Aurora Academy - Lingwala Campus",
     "description": "Troisième jour du Kids Bootcamp, consacré à l’introduction au coding à travers la plateforme Scratch.",
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248744/gallery/Aurora_Kids_16_1_ynzvut.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248757/gallery/Aurora_Kids_34_1_haqjk3.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+              {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248752/gallery/Aurora_Kids_35_m8bps5.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248754/gallery/Aurora_Kids_30_1_jqs9mw.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+    ]
   },
   {
     "id": "12",
@@ -358,7 +433,25 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249060/gallery/Aurora_Kids_45_cnhcd8.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249117/gallery/Aurora_Kids_72_2_r6dvhz.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249127/gallery/Aurora_Kids_60_h23sgy.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+
+    
+  
+  ]
   },
   {
     "id": "13",
@@ -371,7 +464,36 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249432/gallery/Aurora_Kids_176_vng4bn.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249429/gallery/Aurora_Kids_127_gerjlw.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249449/gallery/Aurora_Kids_93_a2vbvg.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249428/gallery/Aurora_Kids_50_udj3hi.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249430/gallery/Aurora_Kids_15_1_e4rjkd.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+
+    
+  
+  ]
   },
   {
     "id": "14",
