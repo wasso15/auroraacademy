@@ -444,13 +444,9 @@ const timelineEvents: TimelineEvent[] =
     },
 
      {
-      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249127/gallery/Aurora_Kids_60_h23sgy.jpg",
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249061/gallery/Aurora_Kids_15_1_lq4vg4.jpg",
       "alt": "Enfant suivant le cours - aurora Kids bootcamp"
     },
-
-
-    
-  
   ]
   },
   {
@@ -489,8 +485,6 @@ const timelineEvents: TimelineEvent[] =
       "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249430/gallery/Aurora_Kids_15_1_e4rjkd.jpg",
       "alt": "Enfant suivant le cours - aurora Kids bootcamp"
     },
-
-
     
   
   ]
@@ -505,9 +499,73 @@ const timelineEvents: TimelineEvent[] =
     "description": "Session de jury final réunissant les participants de la première cohorte en intégration web et de la troisième cohorte en graphisme, avec la participation de 16 étudiants.",
     "participants": 16,
     "category": "Intégration & Graphisme",
-    "categoryColor": "from-green-500 to-orange-500",
-    "images": []
-  }
+    "categoryColor": "from-pink-500 to-orange-500",
+    "images": [
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761314386/Aurora_Kids_143_bzg7dr.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    }
+,
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761314380/Aurora_Kids_83_bexvc5.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761314387/Aurora_Kids_46_osfy7u.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761314380/Aurora_Kids_37_1_iwgy5s.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761314383/Aurora_Kids_75_bihmkl.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    }
+    ]
+  },
+
+    {
+    "id": "5",
+    "date": "10",
+    "month": "Novembre",
+    "year": "2024",
+    "title": "Remise de brevets - 2ᵉ cohorte en graphisme",
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Cérémonie de clôture réunissant les participants de la première cohorte en intégration web et de la troisième cohorte en graphisme avec la remise des brevets aux 16 étudiants.",
+    "participants": 16,
+    "category": "Graphisme & Intégration Web",
+    "categoryColor": "from-pink-500 to-orange-500",
+    "images": [  {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761315156/Aurora-Certif_91_u9j88n.jpg",
+      "alt": "Coach et apprentant ouvrant une bouteille de vin - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761315164/Aurora-Certif_82_iuyhr7.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761315160/Aurora-Certif_117_1_wpiaa3.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761315158/Aurora-Certif_100_ubguoi.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+    
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761315158/Aurora-Certif_105_mcgudi.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+  
+  ]
+  },
 ]
 
 
