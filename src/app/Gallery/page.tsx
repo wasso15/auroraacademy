@@ -110,12 +110,33 @@ const timelineEvents: TimelineEvent[] =
     "month": "Juillet",
     "year": "2024",
     "title": "Lancement de la 2ᵉ cohorte en graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Début du programme pour la deuxième cohorte en graphisme avec 28 nouveaux apprenants motivés.",
-    "participants": 28,
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Début du programme pour la deuxième cohorte en graphisme avec 22 nouveaux apprenants motivés.",
+    "participants": 22,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761160331/gallery/Aurora_100_1373910789_oli7ja.jpg",
+      "alt": " 2 enfant apprenants concentrer devant leur PC - aurora academy"
+    },
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761160332/gallery/Aurora_26_x1ltme.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+  {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761160328/gallery/Aurora_32_1846146521_zcpv2e.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761160330/gallery/Aurora_18_-1261951727_vkdimh.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761160328/gallery/Aurora_98_1458281753_sdl30m.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+
+  ]
   },
   {
     "id": "4",
@@ -128,20 +149,90 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761161458/gallery/Aurora_20_qdblmi.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761161457/gallery/Aurora_7_srfeaz.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+
+    
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761161460/gallery/Aurora_30_wxuwvu.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761161468/gallery/Aurora_14_pu2r5j.jpg",
+      "alt": " apprenants suivant le cours  - aurora academy"
+    },
+    ]
+  },
+   {
+    "id": "1",
+    "date": "27",
+    "month": "Octobre",
+    "year": "2024",
+    "title": "Jury final deuxieme cohorte graphisme",
+    "location": "Aurora Academy -Mont-Ngafula",
+    "description": "Jury final de la deuxieme cohorte en graphisme avec la participation de 15 étudiants talentueux présentant leurs projets créatifs.",
+    "participants": 14,
+    "category": "Graphisme",
+    "categoryColor": "from-pink-500 to-orange-500",
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162759/gallery/Salle-end_42_o9p7o4.jpg",
+      "alt": "Photo d'ensemble des participants au jury final de la première cohorte en graphisme"
+    },{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162765/gallery/Salle-end_85_zfgxyq.jpg",
+      "alt": "participant au jury final presentant son projet- aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162761/gallery/Salle-end_101_ca6tev.jpg",
+      "alt": "participante au jury final presentant son projet- aurora academy"
+    },
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162763/gallery/Salle-end_132_br56b3.jpg",
+      "alt": "Photo d'ensemble des participants au jury final de la première cohorte en graphisme"
+    },
+    
+  ]
   },
   {
     "id": "5",
-    "date": "9",
+    "date": "10",
     "month": "Novembre",
     "year": "2024",
     "title": "Remise de brevets - 2ᵉ cohorte en graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Cérémonie de clôture de la deuxième cohorte en graphisme avec la remise des brevets aux 28 étudiants.",
-    "participants": 28,
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Cérémonie de clôture de la deuxième cohorte en graphisme avec la remise des brevets aux 14 étudiants.",
+    "participants": 14,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [  {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162958/gallery/AURORA_68_chq4jt.jpg",
+      "alt": "Coach et apprentant ouvrant une bouteille de vin - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162963/gallery/AURORA_80_mh38ao.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761162963/gallery/AURORA_100_bsi1mh.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+    
+
+    
+  
+  ]
   },
   {
     "id": "6",
@@ -149,12 +240,26 @@ const timelineEvents: TimelineEvent[] =
     "month": "Février",
     "year": "2025",
     "title": "Lancement de la 1ère cohorte en intégration web",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Début du programme d’intégration web avec la participation de 23 apprenants désireux de maîtriser les bases du développement front-end.",
-    "participants": 23,
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Début du programme d’intégration web avec la participation de 18 apprenants désireux de maîtriser les bases du développement front-end.",
+    "participants": 18,
     "category": "Intégration Web",
     "categoryColor": "from-green-500 to-teal-600",
-    "images": []
+    "images": [
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163553/gallery/Aurora-09-02_27_dqzfxm.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+         {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163549/gallery/Aurora-09-02_20_avuwxb.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163552/gallery/Aurora-09-02_50_vtnsdt.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+    ]
   },
   {
     "id": "7",
@@ -163,11 +268,32 @@ const timelineEvents: TimelineEvent[] =
     "year": "2025",
     "title": "2ᵉ séance de formation - intégration web",
     "location": "Aurora Academy - Campus Principal",
-    "description": "Deuxième séance de formation pour la cohorte d’intégration web, axée sur la mise en page responsive et les composants dynamiques.",
+    "description": "Deuxième séance de formation pour la cohorte d’intégration web, Les bases du HTML et CSS sont au programme.",
     "participants": 0,
     "category": "Intégration Web",
     "categoryColor": "from-green-500 to-teal-600",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163859/gallery/Aurora-09_48_pagg4r.jpg",
+      "alt": "Photo groupe d'apprenant avec leurs brevets - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163857/gallery/Aurora-09_33_eu50es.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163857/gallery/Aurora-09_32_phnrbg.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761163857/gallery/Aurora-09_40_mvmksr.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+  
+  
+  ]
   },
   {
     "id": "8",
@@ -175,12 +301,32 @@ const timelineEvents: TimelineEvent[] =
     "month": "Mai",
     "year": "2025",
     "title": "Lancement de la 3ᵉ cohorte en graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Lancement de la troisième cohorte en graphisme avec la participation de 23 nouveaux apprenants passionnés de design numérique.",
-    "participants": 23,
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Lancement de la troisième cohorte en graphisme avec la participation de 20 nouveaux apprenants passionnés de design numérique.",
+    "participants": 20,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247591/gallery/Aurora_13_ejdnqe.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247589/gallery/Aurora_30_2_xckiuz.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247588/gallery/Aurora_26_vi8oxx.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247589/gallery/Aurora_35_pv0zn4.jpg",
+      "alt": "Photo groupe d'apprenant devant le PC - aurora academy"
+    },
+    ]
   },
   {
     "id": "9",
@@ -188,12 +334,31 @@ const timelineEvents: TimelineEvent[] =
     "month": "Juin",
     "year": "2025",
     "title": "Avant-dernière séance de formation - graphisme",
-    "location": "Aurora Academy - Campus Principal",
-    "description": "Avant-dernière séance du programme de graphisme, marquée par les projets collaboratifs de 17 apprenants.",
+    "location": "Aurora Academy - Mont-Ngafula",
+    "description": "Avant-dernière séance du programme de graphisme, marquée par les projets collaboratifs de 12 apprenants.",
     "participants": 17,
     "category": "Graphisme",
     "categoryColor": "from-pink-500 to-orange-500",
-    "images": []
+    "images": [
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247933/gallery/Aurora_52_pylgsu.jpg",
+      "alt": "Coach presentant sur ecran geant - aurora academy"
+    },
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247941/gallery/Aurora_6_eqvc6k.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247934/gallery/Aurora_43_a8bljz.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761247936/gallery/Aurora_56_dx1zrm.jpg",
+      "alt": "Apprenant devant leur pc - aurora academy"
+    },
+    ]
   },
   {
     "id": "10",
@@ -206,7 +371,23 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248290/gallery/Beligo_26_ic4flt.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248292/gallery/Beligo_58_ueipad.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248294/gallery/Beligo_35_vbpr35.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+    ]
   },
   {
     "id": "11",
@@ -214,12 +395,32 @@ const timelineEvents: TimelineEvent[] =
     "month": "Août",
     "year": "2025",
     "title": "Jour 3 - Introduction au coding avec Scratch",
-    "location": "Aurora Academy - Campus Principal",
+    "location": "Aurora Academy - Lingwala Campus",
     "description": "Troisième jour du Kids Bootcamp, consacré à l’introduction au coding à travers la plateforme Scratch.",
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [
+        {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248744/gallery/Aurora_Kids_16_1_ynzvut.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248757/gallery/Aurora_Kids_34_1_haqjk3.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+              {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248752/gallery/Aurora_Kids_35_m8bps5.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+      {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761248754/gallery/Aurora_Kids_30_1_jqs9mw.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+    ]
   },
   {
     "id": "12",
@@ -232,7 +433,25 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249060/gallery/Aurora_Kids_45_cnhcd8.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249117/gallery/Aurora_Kids_72_2_r6dvhz.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+     {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249127/gallery/Aurora_Kids_60_h23sgy.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+
+    
+  
+  ]
   },
   {
     "id": "13",
@@ -245,7 +464,36 @@ const timelineEvents: TimelineEvent[] =
     "participants": 0,
     "category": "Kids Bootcamp",
     "categoryColor": "from-blue-500 to-purple-600",
-    "images": []
+    "images": [{
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249432/gallery/Aurora_Kids_176_vng4bn.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249429/gallery/Aurora_Kids_127_gerjlw.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249449/gallery/Aurora_Kids_93_a2vbvg.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+    
+       {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249428/gallery/Aurora_Kids_50_udj3hi.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+          {
+      "src": "https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761249430/gallery/Aurora_Kids_15_1_e4rjkd.jpg",
+      "alt": "Enfant suivant le cours - aurora Kids bootcamp"
+    },
+
+
+    
+  
+  ]
   },
   {
     "id": "14",
