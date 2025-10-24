@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <h1 className=" text-center md:text-left text-4xl lg:text-6xl font-black text-white leading-tight">
                   Qui sommes-nous
                 </h1>
-                <p className="text-xl text-white max-w-2xl leading-relaxed ">
+                <p className="md:text-xl text-white max-w-2xl leading-relaxed ">
                   {t('about.foundedBelief')}
                 </p>
               </div>
