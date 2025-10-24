@@ -40,6 +40,7 @@ import { Button } from '@/components/ui/button';
 import { ImageWithFallback } from '@/components/ImageWithFallback';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { motion } from "framer-motion"
 
 
 
@@ -235,17 +236,26 @@ export default function AuroraKidsBootcampPage() {
                
             </div>
             
-            <div className="relative">
-              <div className="relative overflow-hidden ">
-                <ImageWithFallback
-                  src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760730025/Kids-5_2x_tsowsa.png"
-                  alt="Enfants en formation de programmation"
-                  className="w-full md:h-[550px] lg:h-[670px]  object-contain"
-                />
-              </div>
-            
-            
-            </div>
+      <div className="relative">
+  <div className="relative overflow-hidden">
+    <motion.div
+      animate={{
+        y: [0, -20, 0] // Déplacement vertical pour l'effet bounce
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }}
+    >
+      <ImageWithFallback
+        src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760730025/Kids-5_2x_tsowsa.png"
+        alt="Enfants en formation de programmation"
+        className="w-full md:h-[550px] lg:h-[670px] object-contain"
+      />
+    </motion.div>
+  </div>
+</div>
           </div>
         </div>
       </section>
