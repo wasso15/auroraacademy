@@ -41,12 +41,33 @@ import { ImageWithFallback } from '@/components/ImageWithFallback';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { motion } from "framer-motion"
+import { TestimonialsSection } from '@/components/Shared/TestiamonialsSection';
 
 
 
 export default function AuroraKidsBootcampPage() {
   const { t } = useLanguage();
   const [selectedModule, setSelectedModule] = useState(0);
+
+      const testimonials: {
+      type: 'text' | 'video';
+      name: string;
+      role: string;
+      content: string;
+      videoThumbnail?: string;
+      videoDuration?: string;
+      youtubeUrl?: string;
+    }[] = [
+
+  {
+  type: 'video',
+  name: 'Moise SHOMBA',
+  role: t('home.student'),
+  content: t('home.testimonial2'),
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761401355/Aurora-Certif_156_1155853511_g4baru.jpg',
+  videoDuration: '0:48',
+  youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
+},]
 
   const advantages = [
     {
@@ -126,22 +147,7 @@ export default function AuroraKidsBootcampPage() {
     // }
   ];
 
-  const testimonials = [
-    {
-      name: "Marie Ndola",
-      role: "Maman de Josué (12 ans)",
-      comment: "Mon fils a développé une véritable passion pour la programmation. Il a créé son premier jeu en seulement 3 semaines !",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1628605007510-696cd5731961?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwbGVhcm5pbmclMjB0ZWNobm9sb2d5JTIwdG9nZXRoZXJ8ZW58MXx8fHwxNzU5NzgzMzU2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      name: "Patrick Mukendi",
-      role: "Papa de Grace (10 ans)",
-      comment: "Aurora Academy a donné confiance à ma fille en technologie. Maintenant elle veut devenir ingénieure en robotique !",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1674049406486-4b1f6e1845fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGNvbXB1dGVycyUyMHRlY2hub2xvZ3klMjBjbGFzc3Jvb20lMjBsZWFybmluZ3xlbnwxfHx8fDE3NTk3ODMzNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    }
-  ];
+
 
   const practicalInfo = [
     {
@@ -237,7 +243,7 @@ export default function AuroraKidsBootcampPage() {
             </div>
             
       <div className="relative">
-  <div className="relative overflow-hidden">
+  <div className="relative overflow-hidden ">
     <motion.div
       animate={{
         y: [0, -20, 0] // Déplacement vertical pour l'effet bounce
@@ -247,6 +253,7 @@ export default function AuroraKidsBootcampPage() {
         repeat: Infinity,
         ease: "easeInOut"
       }}
+      className=' py-3'
     >
       <ImageWithFallback
         src="https://res.cloudinary.com/dfy1hmq1b/image/upload/v1760730025/Kids-5_2x_tsowsa.png"
@@ -522,9 +529,9 @@ export default function AuroraKidsBootcampPage() {
       </section>     
 
       {/* 6. Témoignages / Résultats */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <section className=" bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="text-center mb-10">
+          {/* <div className="text-center mb-10">
             <Badge className="bg-gradient-to-r from-[#ff7100]/10 to-[#d80e1f]/10 text-[#ff7100] border border-[#ff7100]/20 mb-6 px-6 py-2">
               <Heart className="w-4 h-4 mr-2" />
               Témoignages
@@ -532,35 +539,10 @@ export default function AuroraKidsBootcampPage() {
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
               Ce que disent les <span className="bg-gradient-to-r from-[#ff7100] to-[#d80e1f] bg-clip-text text-transparent">parents</span>
             </h2>
-          </div>
+          </div> */}
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <ImageWithFallback
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <div>
-                      <h4 className="font-black text-gray-900">{testimonial.name}</h4>
-                      <p className="text-gray-600 text-sm">{testimonial.role}</p>
-                    </div>
-                    <div className="ml-auto flex gap-1">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed italic">
-                    {testimonial.comment}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+             <TestimonialsSection testimonials={testimonials} />
+       
 
         </div>
       </section>

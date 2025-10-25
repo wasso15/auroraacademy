@@ -27,7 +27,7 @@ const ROUTES = {
   home: "/",
   programs: "/programs",
   about: "/about",
-  gallery: "/gallery",
+  gallery: "/Gallery",
   contact: "/contact",
 } as const;
 

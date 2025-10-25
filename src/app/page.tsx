@@ -81,7 +81,7 @@ export default function HomePage() {
   name: 'Moise SHOMBA',
   role: t('home.student'),
   content: t('home.testimonial2'),
-  videoThumbnail: 'https://images.unsplash.com/photo-1682617367184-5ccbda40e4a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc3R1ZGVudHMlMjB0ZXN0aW1vbmlhbCUyMHZpZGVvJTIwY29uZmVyZW5jZXxlbnwxfHx8fDE3NTcwOTE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761401355/Aurora-Certif_156_1155853511_g4baru.jpg',
   videoDuration: '0:48',
   youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
 },
