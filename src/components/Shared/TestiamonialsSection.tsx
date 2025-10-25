@@ -142,7 +142,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                           </div>
 
                           {/* Contenu du témoignage */}
-                          <blockquote className="text-[24px] text-center md:text-left  md:text-3xl  font-cooperhewitt font-medium leading-tight text-gray-800 ">
+                          <blockquote className="lg:text-4xl font-black text-center md:text-left  md:text-3xl leading-tight text-gray-800 ">
                            {testimonial.content}
                           </blockquote>
 

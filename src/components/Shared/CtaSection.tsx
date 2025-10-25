@@ -66,11 +66,11 @@ export default function CtaSection() {
           {/* Texte section */}
           <div className="lg:col-span-7 text-center md:text-left">
             <h2 className="text-4xl md:text-5xl  lg:text-6xl font-black mb-4 ">
-              {t("home.readyToShape")}
+             À propos d&apos;Aurora Academy
             </h2>
 
             <p className="text-[16.5px]  md:text-lg lg:text-2xl font-cooperhewitt   text-orange-100 mb-8 sm:mb-10 max-w-3xl leading-tight">
-              {t("home.joinBootcamp")}
+             Nous mettons l&apos;accent sur la créativité et le développement de compétences concrètes pour préparer la nouvelle génération aux défis du futur.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
@@ -78,8 +78,7 @@ export default function CtaSection() {
                 size="lg"
                 className="w-full sm:w-auto group bg-white text-[#ff7100] font-semibold text-[14px] hover:bg-gray-50 px-8 sm:px-10 py-6 sm:py-6 hover:scale-105 transition-all duration-300 rounded-xl"
               >
-                Inscrivez-vous
-              </Button>
+En savoir Plus              </Button>
             </div>
           </div>
         </div>
