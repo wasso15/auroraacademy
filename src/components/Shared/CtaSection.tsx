@@ -3,6 +3,7 @@ import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { useLanguage } from "../LanguageContext";
+import Link from "next/link";
 
 export default function CtaSection() {
   const { t } = useLanguage();
@@ -74,11 +75,14 @@ export default function CtaSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
-              <Button
+              <Link  href={"/about"}>
+                       <Button
                 size="lg"
                 className="w-full sm:w-auto group bg-white text-[#ff7100] font-semibold text-[14px] hover:bg-gray-50 px-8 sm:px-10 py-6 sm:py-6 hover:scale-105 transition-all duration-300 rounded-xl"
               >
 En savoir Plus              </Button>
+              </Link>
+     
             </div>
           </div>
         </div>

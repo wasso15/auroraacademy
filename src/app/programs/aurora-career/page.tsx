@@ -213,7 +213,7 @@ export default function AuroraKidsBootcampPage() {
   return (
     <div className="min-h-screen font-poppins">
       {/* 1. Hero Section */}
-      <section className=" py-24 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
+      <section className=" py-10 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
         {/* Background animations */}
 
          <div className="absolute inset-0 opacity-10">
@@ -266,7 +266,7 @@ Des parcours numériques pour jeunes et professionnels en reconversion          
       </section>
 
       {/* 2. Explication détaillée du programme */}
-      <section className=" pt-24 pb-14 bg-white">
+      <section className=" pt-14 pb-14 bg-white">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center mb-20">
             

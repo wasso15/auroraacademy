@@ -124,7 +124,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="w-full flex-shrink-0 px-4"
+                  className="w-full flex-shrink-0 px-2"
                 >
                   <Card className="group border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-white/90 backdrop-blur-sm overflow-hidden p-7 relative hover:scale-[1.02]">
                     {/* Gradient decoratif */}
@@ -142,7 +142,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
                           </div>
 
                           {/* Contenu du témoignage */}
-                          <blockquote className="lg:text-4xl font-black text-center md:text-left  md:text-3xl leading-tight text-gray-800 ">
+                          <blockquote className=" text-2xl  lg:text-4xl font-black text-center md:text-left  md:text-3xl leading-tight text-gray-800 ">
                            {testimonial.content}
                           </blockquote>
 
@@ -193,11 +193,11 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
           alt={`Thumbnail vidéo de ${testimonial.name}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
           <Play className="w-14 h-14 text-white group-hover:scale-110 transition-transform duration-300" />
         </div>
         {testimonial.videoDuration && (
-          <span className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md">
+          <span className="absolute bottom-3 right-3 bg-black/70 text-white text-[8px] px-2 py-1 rounded-md">
             {testimonial.videoDuration}
           </span>
         )}
