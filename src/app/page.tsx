@@ -79,12 +79,52 @@ export default function HomePage() {
   {
   type: 'video',
   name: 'Moise SHOMBA',
-  role: t('home.student'),
+  role: "Apprenant en Graphisme (Photoshop) à Aurora Academy",
   content: t('home.testimonial2'),
   videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761401355/Aurora-Certif_156_1155853511_g4baru.jpg',
   videoDuration: '0:48',
   youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
 },
+{
+  type: 'video',
+  name: 'Madame Bijou MASOKOLO',
+  role: " Parent d’un apprenant Aurora Kids Bootcamp.",
+  content: "Lorsque Rubi sortait de sa séance, il était toujours très enthousiaste et avait beaucoup de choses à raconter. Au fil du temps, j’ai vu une réelle évolution en lui.",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013488/gallery/Aurora_Kids_50_-1384022202_nlfv1y.jpg',
+  videoDuration: '1:27',
+  youtubeUrl: 'https://youtu.be/k9qdLYDPVhw', // Ajoutez cette ligne
+},
+
+{
+  type: 'video',
+  name: 'Daniel ILONGA',
+  role: "Apprenant Aurora Kids Bootcamp.",
+  content: "Ce que j’ai vécu est extraordinaire.",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013490/gallery/Beligo_5_-220285852_iucfvu.jpg',
+  videoDuration: '0:48',
+  youtubeUrl: 'https://youtu.be/tk8tKnogc_U', // Ajoutez cette ligne
+},
+
+{
+  type: 'video',
+  name: 'Madame Judith NKOY',
+  role: "Parent d’un apprenant Aurora Kids Bootcamp.",
+  content: "Aujourd’hui, ils sont  un peu timides, mais à la maison, je sens vraiment qu’ils apprennent quelque chose de nouveau. ",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013484/gallery/Aurora_Kids_62_-439260219_rdw2fg.jpg',
+  videoDuration: '0:48',
+  youtubeUrl: 'https://youtu.be/UTnUWzoOY5M', // Ajoutez cette ligne
+},
+
+{
+  type: 'video',
+  name: 'Alegria MUNOKA',
+  role: "Apprenant en Graphisme (Photoshop) à Aurora Academy.",
+  content: "L’argent que j’avais dépensé pour la formation, je l’ai déjà récupéré.",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013486/gallery/Aurora-Certif_30_-282314430_v8tkey.jpg',
+  videoDuration: '0:48',
+  youtubeUrl: 'https://youtu.be/Swdj2owPmqw', // Ajoutez cette ligne
+},
+
 
   ];
   const achievements = [
@@ -159,7 +199,7 @@ export default function HomePage() {
               {/* Titre principal avec effet typing */}
               <div className="space-y-4 ">
                 <h1 className=" textce font-poppins mt-10 lg:mt-0 text-6xl lg:text-6xl xl:text-7xl font-black">
-                  <span className="block  text-center md:text-left bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
+                  <span className="block  text-center lg:text-left bg-gradient-to-r from-white to-orange-100 bg-clip-text text-transparent">
                     {t("home.heroTitle")}
                   </span>
                   <span className="block text-white drop-shadow-2xl relative">
@@ -168,7 +208,7 @@ export default function HomePage() {
                   </span>
                 </h1>
 
-                <p className=" font-cooperhewitt font-normal text-center md:text-left text-lg  md:text-[26.5px] text-orange-100 max-w-2xl leading-tight">
+                <p className=" font-cooperhewitt font-normal text-center lg:text-left text-lg  md:text-[26.5px] text-orange-100 max-w-2xl leading-tight">
                   {t("home.heroSubtitle")} 
                 </p>
               </div>

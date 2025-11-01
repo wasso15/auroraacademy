@@ -57,17 +57,42 @@ export default function AuroraKidsBootcampPage() {
       videoThumbnail?: string;
       videoDuration?: string;
       youtubeUrl?: string;
-    }[] = [
+    }[] =[
 
-  {
+{
   type: 'video',
-  name: 'Moise SHOMBA',
-  role: t('home.student'),
-  content: t('home.testimonial2'),
-  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1761401355/Aurora-Certif_156_1155853511_g4baru.jpg',
+  name: 'Madame Bijou MASOKOLO',
+  role: " Parent d’un apprenant Aurora Kids Bootcamp.",
+  content: "Lorsque Rubi sortait de sa séance, il était toujours très enthousiaste et avait beaucoup de choses à raconter. Au fil du temps, j’ai vu une réelle évolution en lui.",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013488/gallery/Aurora_Kids_50_-1384022202_nlfv1y.jpg',
+  videoDuration: '1:27',
+  youtubeUrl: 'https://youtu.be/k9qdLYDPVhw', // Ajoutez cette ligne
+},
+
+{
+  type: 'video',
+  name: 'Daniel ILONGA',
+  role: "Apprenant Aurora Kids Bootcamp.",
+  content: "Ce que j’ai vécu est extraordinaire.",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013490/gallery/Beligo_5_-220285852_iucfvu.jpg',
   videoDuration: '0:48',
-  youtubeUrl: 'https://www.youtube.com/watch?v=t2ERHtySFfY', // Ajoutez cette ligne
-},]
+  youtubeUrl: 'https://youtu.be/tk8tKnogc_U', // Ajoutez cette ligne
+},
+
+{
+  type: 'video',
+  name: 'Madame Judith NKOY',
+  role: "Parent d’un apprenant Aurora Kids Bootcamp.",
+  content: "Aujourd’hui, ils sont  un peu timides, mais à la maison, je sens vraiment qu’ils apprennent quelque chose de nouveau. ",
+  videoThumbnail: 'https://res.cloudinary.com/dfy1hmq1b/image/upload/v1762013484/gallery/Aurora_Kids_62_-439260219_rdw2fg.jpg',
+  videoDuration: '0:48',
+  youtubeUrl: 'https://youtu.be/UTnUWzoOY5M', // Ajoutez cette ligne
+},
+
+
+
+
+  ]
 
   const advantages = [
     {
@@ -219,7 +244,7 @@ export default function AuroraKidsBootcampPage() {
   return (
     <div className="min-h-screen font-poppins">
       {/* 1. Hero Section */}
-      <section className=" py-24 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
+      <section className=" py-12 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
         {/* Background animations */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-white rounded-full animate-ping"></div>
@@ -233,7 +258,7 @@ export default function AuroraKidsBootcampPage() {
             <div className="space-y-8">
               
               
-              <h1 className="text-5xl  text-center font-poppins lg:text-left lg:text-[65px] leading-none font-black ">
+              <h1 className="text-3xl  text-center font-poppins lg:text-left lg:text-[65px] leading-none font-black ">
 Éveillez la créativité, formez les talents de demain              </h1>
               
               <p className=" text-lg text-center lg:text-left lg:text-2xl font-cooperhewitt text-orange-100 leading-none">
