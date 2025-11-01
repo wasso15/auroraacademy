@@ -262,7 +262,7 @@ export function Header({ currentPage }: HeaderProps) {
         {/* Actions desktop */}
         <div className="hidden lg:flex items-center gap-3">
 
-          <Link href="/programs">
+          <Link href="/partnership">
             <Button
               size="lg"
               className="group bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
@@ -392,7 +392,7 @@ export function Header({ currentPage }: HeaderProps) {
                 })}
 
                 <div className="flex flex-col gap-3 mt-8 pt-6 border-t border-gray-200">
-                  <Link href="/programs" onClick={() => setIsOpen(false)}>
+                  <Link href="/partnership" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium py-6 rounded-lg shadow-lg">
                       <Heart className="w-4 h-4 mr-1" aria-hidden />
                       <span className="text-sm">{t("header.becomePartner")}</span>
