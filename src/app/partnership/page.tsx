@@ -41,7 +41,7 @@ export default function PartnershipsPage() {
         {/* <meta name="description" content={t('partnerships.joinUs')} /> */}
       </Head>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen font-poppins">
         <section className="py-48 bg-gradient-to-br from-[#ff7100] via-[#ff9100] to-[#d80e1f] text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-ping"></div>
@@ -60,7 +60,7 @@ export default function PartnershipsPage() {
           </div>
         </section>
 
-        <section className="py-48 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto max-w-7xl px-4">
         
 
