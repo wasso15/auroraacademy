@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +16,38 @@ import { useLanguage } from "@/components/LanguageContext";
 
 function ContactPage() {
   const { t } = useLanguage();
+  const [status, setStatus] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const body = {
+      name: (formData.get("name") || "").toString(),
+      email: (formData.get("email") || "").toString(),
+      subject: (formData.get("subject") || "").toString(),
+      message: (formData.get("message") || "").toString(),
+    };
+    console.log("Submitting form data:", body);
+
+    setStatus("loading");
+    try {
+        const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
+    setTimeout(() => setStatus(null), 4000);
+  }
   return (
     <div className="min-h-screen font-poppins">
       {/* Hero */}
@@ -44,6 +77,7 @@ function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
+                <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-bold text-gray-700 mb-2">
@@ -51,6 +85,7 @@ function ContactPage() {
                     </label>
                     <input
                       type="text"
+                      name="name"
                       className="block w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#ff7100] focus:border-transparent transition-all duration-300 hover:border-[#ff7100]/50"
                       placeholder={t("contact.yourFullName")}
                     />
@@ -61,6 +96,7 @@ function ContactPage() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       className="block w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#ff7100] focus:border-transparent transition-all duration-300 hover:border-[#ff7100]/50"
                       placeholder={t("contact.yourEmail")}
                     />
@@ -73,6 +109,7 @@ function ContactPage() {
                   </label>
                   <input
                     type="text"
+                    name="subject"
                     className="block w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#ff7100] focus:border-transparent transition-all duration-300 hover:border-[#ff7100]/50"
                     placeholder={t("contact.whatAbout")}
                   />
@@ -83,15 +120,22 @@ function ContactPage() {
                     {t("contact.message")}
                   </label>
                   <textarea
+                    name="message"
                     rows={6}
                     className="block w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-[#ff7100] focus:border-transparent resize-none transition-all duration-300 hover:border-[#ff7100]/50"
                     placeholder={t("contact.howCanHelp")}
                   ></textarea>
                 </div>
+                <div className="mt-4">
+                  <Button type="submit" className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium py-6 md:py-6 lg:py-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    {t("contact.sendMessageBtn")}
+                  </Button>
+                </div>
 
-                <Button className="w-full bg-gradient-to-r from-[#ff7100] to-[#ff9100] hover:from-[#e65100] hover:to-[#f57c00] text-white font-medium py-6 md:py-6 lg:py-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  {t("contact.sendMessageBtn")}
-                </Button>
+                {status === "loading" && <p className="text-sm text-gray-500 mt-2">Envoi...</p>}
+                {status === "success" && <p className="text-sm text-green-600 mt-2">Message envoyé.</p>}
+                {status === "error" && <p className="text-sm text-red-600 mt-2">Erreur, réessayez.</p>}
+                </form>
               </CardContent>
             </Card>
 
